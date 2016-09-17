@@ -4,19 +4,29 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_hero</sprite>
     <sprite>sprites\spr_knight</sprite>
+    <sprite>sprites\spr_CenterCastleWall</sprite>
+    <sprite>sprites\spr_CastleWallTop</sprite>
+    <sprite>sprites\spr_CastleWallLeftSide</sprite>
+    <sprite>sprites\spr_CastleWallRightSide</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
-    <background>background\bck_dirt</background>
+    <background>background\bck_CenterDirt</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_hero</object>
     <object>objects\obj_knight</object>
+    <object>objects\obj_CenterCastleWall</object>
+    <object>objects\obj_CastleWallTop</object>
+    <object>objects\obj_CastleWallLeftSide</object>
+    <object>objects\obj_CastleWallRightSide</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
