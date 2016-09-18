@@ -15,6 +15,7 @@
     <sprite>sprites\spr_CastleWallTop</sprite>
     <sprite>sprites\spr_CastleWallLeftSide</sprite>
     <sprite>sprites\spr_CastleWallRightSide</sprite>
+    <sprite>sprites\spr_CastleFloor</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -28,6 +29,7 @@
     <object>objects\obj_CastleWallTop</object>
     <object>objects\obj_CastleWallLeftSide</object>
     <object>objects\obj_CastleWallRightSide</object>
+    <object>objects\obj_CastleFloor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
