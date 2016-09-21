@@ -16,6 +16,8 @@
     <sprite>sprites\spr_CastleWallLeftSide</sprite>
     <sprite>sprites\spr_CastleWallRightSide</sprite>
     <sprite>sprites\spr_CastleFloor</sprite>
+    <sprite>sprites\spr_target</sprite>
+    <sprite>sprites\spr_MainDoor</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -30,6 +32,8 @@
     <object>objects\obj_CastleWallLeftSide</object>
     <object>objects\obj_CastleWallRightSide</object>
     <object>objects\obj_CastleFloor</object>
+    <object>objects\obj_target</object>
+    <object>objects\obj_MainDoor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
