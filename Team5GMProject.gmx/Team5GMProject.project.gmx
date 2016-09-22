@@ -23,6 +23,8 @@
     <sprite>sprites\spr_MainDoor</sprite>
     <sprite>sprites\spr_DialogueBox</sprite>
     <sprite>sprites\spr_TrainingDummy</sprite>
+    <sprite>sprites\spr_CenterGrass</sprite>
+    <sprite>sprites\spr_Tree</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -41,6 +43,8 @@
     <object>objects\obj_MainDoor</object>
     <object>objects\obj_DialogueBox</object>
     <object>objects\obj_TrainingDummy</object>
+    <object>objects\obj_Tree</object>
+    <object>objects\obj_CenterGrass</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
