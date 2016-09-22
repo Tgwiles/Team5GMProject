@@ -47,8 +47,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>if (speed &gt; 12) { 
 speed = 12;
+=======
+            <string>if (speed &gt; 10) { 
+speed = 10;
+>>>>>>> origin/master
 }
 </string>
           </argument>
@@ -212,7 +217,7 @@ speed = 12;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed-=3;
+            <string>vspeed-=6;
 
 </string>
           </argument>
@@ -236,7 +241,7 @@ speed = 12;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed+=3;
+            <string>vspeed+=6;
 
 </string>
           </argument>
@@ -260,7 +265,7 @@ speed = 12;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed+=3;
+            <string>hspeed+=6;
 
 </string>
           </argument>
@@ -284,7 +289,7 @@ speed = 12;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed-=3;
+            <string>hspeed-=6;
 
 </string>
           </argument>
