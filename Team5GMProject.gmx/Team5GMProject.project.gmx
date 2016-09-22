@@ -31,6 +31,12 @@
     <background>background\bck_CenterDirt</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_text.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_hero</object>
     <object>objects\obj_knight</object>
@@ -45,6 +51,8 @@
     <object>objects\obj_TrainingDummy</object>
     <object>objects\obj_Tree</object>
     <object>objects\obj_CenterGrass</object>
+    <object>objects\obj_text</object>
+    <object>objects\obj_spawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
