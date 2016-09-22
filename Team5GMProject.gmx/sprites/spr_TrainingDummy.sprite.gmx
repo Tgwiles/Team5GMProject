@@ -7,18 +7,30 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
+<<<<<<< HEAD
   <bbox_left>12</bbox_left>
   <bbox_right>319</bbox_right>
   <bbox_top>58</bbox_top>
   <bbox_bottom>592</bbox_bottom>
+=======
+  <bbox_left>1</bbox_left>
+  <bbox_right>95</bbox_right>
+  <bbox_top>14</bbox_top>
+  <bbox_bottom>176</bbox_bottom>
+>>>>>>> 3038b62588606b2d5a7f31125f64208f56a3d3ea
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
+<<<<<<< HEAD
   <width>324</width>
   <height>596</height>
+=======
+  <width>96</width>
+  <height>177</height>
+>>>>>>> 3038b62588606b2d5a7f31125f64208f56a3d3ea
   <frames>
     <frame index="0">images\spr_TrainingDummy_0.png</frame>
   </frames>

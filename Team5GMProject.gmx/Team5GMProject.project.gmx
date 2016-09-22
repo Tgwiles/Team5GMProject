@@ -23,18 +23,26 @@
     <sprite>sprites\spr_MainDoor</sprite>
     <sprite>sprites\spr_DialogueBox</sprite>
     <sprite>sprites\spr_TrainingDummy</sprite>
+<<<<<<< HEAD
+=======
+    <sprite>sprites\spr_CenterGrass</sprite>
+    <sprite>sprites\spr_Tree</sprite>
+>>>>>>> 3038b62588606b2d5a7f31125f64208f56a3d3ea
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
     <background>background\bck_CenterDirt</background>
   </backgrounds>
   <paths name="paths"/>
+<<<<<<< HEAD
   <scripts name="scripts">
     <script>scripts\scr_text.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
   </fonts>
+=======
+>>>>>>> 3038b62588606b2d5a7f31125f64208f56a3d3ea
   <objects name="objects">
     <object>objects\obj_hero</object>
     <object>objects\obj_knight</object>
@@ -47,8 +55,13 @@
     <object>objects\obj_MainDoor</object>
     <object>objects\obj_DialogueBox</object>
     <object>objects\obj_TrainingDummy</object>
+<<<<<<< HEAD
     <object>objects\obj_text</object>
     <object>objects\obj_spawner</object>
+=======
+    <object>objects\obj_Tree</object>
+    <object>objects\obj_CenterGrass</object>
+>>>>>>> 3038b62588606b2d5a7f31125f64208f56a3d3ea
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
