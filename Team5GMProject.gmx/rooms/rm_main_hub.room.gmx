@@ -447,6 +447,7 @@
     <instance objName="obj_target" x="512" y="128" name="inst_1874C892" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_target" x="768" y="128" name="inst_D32FA6FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_knight" x="1024" y="320" name="inst_732A84D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TrainingDummy" x="2304" y="1472" name="inst_E859A214" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
