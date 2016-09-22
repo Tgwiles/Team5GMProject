@@ -18,6 +18,7 @@
     <sprite>sprites\spr_CastleFloor</sprite>
     <sprite>sprites\spr_target</sprite>
     <sprite>sprites\spr_MainDoor</sprite>
+    <sprite>sprites\spr_DialogueBox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -34,9 +35,11 @@
     <object>objects\obj_CastleFloor</object>
     <object>objects\obj_target</object>
     <object>objects\obj_MainDoor</object>
+    <object>objects\obj_DialogueBox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
+    <room>rooms\rm_grass</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
