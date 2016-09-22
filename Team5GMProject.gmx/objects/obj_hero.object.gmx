@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>.5</string>
+            <string>.8</string>
           </argument>
         </arguments>
       </action>
@@ -47,8 +47,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (speed &gt; 7) { 
-speed = 7;
+            <string>if (speed &gt; 10) { 
+speed = 10;
 }
 </string>
           </argument>
@@ -72,7 +72,7 @@ speed = 7;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed-=3;
+            <string>vspeed-=6;
 
 </string>
           </argument>
@@ -96,7 +96,7 @@ speed = 7;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed+=3;
+            <string>vspeed+=6;
 
 </string>
           </argument>
@@ -120,7 +120,7 @@ speed = 7;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed+=3;
+            <string>hspeed+=6;
 
 </string>
           </argument>
@@ -144,7 +144,7 @@ speed = 7;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed-=3;
+            <string>hspeed-=6;
 
 </string>
           </argument>
