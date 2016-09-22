@@ -47,13 +47,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
-            <string>if (speed &gt; 12) { 
-speed = 12;
-=======
             <string>if (speed &gt; 10) { 
 speed = 10;
->>>>>>> origin/master
 }
 </string>
           </argument>
