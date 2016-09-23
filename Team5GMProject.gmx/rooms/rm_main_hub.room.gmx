@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>scr_text("this is a test string", 0.5, 1600, 448);
+  <code>scr_text("", 0.5, 0,0);
 globalvar conversation;
 conversation=false;
 globalvar choice;
