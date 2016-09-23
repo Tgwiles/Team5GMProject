@@ -26,10 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>draw=false;
-text="hello";
-choices[0]="Hello";
-choices[1]="Do the thing";
-choices[2]="Goodbye";
+text="Hello";
 </string>
           </argument>
         </arguments>
@@ -109,29 +106,38 @@ if (draw==true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(conversation==true) {
+            <string>if(conversation==false &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    conversation=true;
+    draw=true;
+}
+
+if(conversation==true) {
     //end the conversation if it says goodbye
-    if(choice==2) {
+    if(choice==3) {
         draw=false;
         conversation=false;
         choice=0;
-        text=choices[choice];
+        text="Hello";
     }
     //else go to next step of conversation
     else {
+        switch (choice)
+        {
+            case 0: text = "Hello";
+                    break;
+            case 1: text = "Do the thing.";
+                    break;
+            case 2: text = "Goodbye";
+                    break;
+            default: text = "something went wrong";
+                    break;
+        }
         choice++;
-        text=choices[choice];
     }
 }
-else if(distance_to_object(obj_hero) &lt; 64) {
-    if(draw==true) {
-        draw=false;
-        conversation=false;
-    }
-    else {
-        draw=true;
-        conversation=true;
-    }
+else {
+    draw=false;
+    conversation=false;
 }
 </string>
           </argument>
