@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>.8</string>
+            <string>.5</string>
           </argument>
         </arguments>
       </action>
@@ -47,8 +47,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (speed &gt; 10) { 
-speed = 10;
+            <string>if (speed &gt; 6) { 
+speed = 6;
 }
 </string>
           </argument>
