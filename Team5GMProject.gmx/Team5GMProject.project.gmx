@@ -39,6 +39,7 @@
   <objects name="objects">
     <object>objects\obj_hero</object>
     <object>objects\obj_knight</object>
+    <object>objects\obj_tree_knight</object>
     <object>objects\obj_CenterCastleWall</object>
     <object>objects\obj_CastleWallTop</object>
     <object>objects\obj_CastleWallLeftSide</object>

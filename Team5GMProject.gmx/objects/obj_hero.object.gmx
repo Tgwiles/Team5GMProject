@@ -212,11 +212,11 @@ speed = 6;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>free</string>
+            <string>conversation</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>true</string>
+            <string>false</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -320,11 +320,11 @@ speed = 6;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>free</string>
+            <string>conversation</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>true</string>
+            <string>false</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -428,11 +428,11 @@ speed = 6;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>free</string>
+            <string>conversation</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>true</string>
+            <string>false</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -536,11 +536,11 @@ speed = 6;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>free</string>
+            <string>conversation</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>true</string>
+            <string>false</string>
           </argument>
           <argument>
             <kind>4</kind>

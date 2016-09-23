@@ -26,10 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>draw=false;
-text="hello";
-choices[0]="Hello";
-choices[1]="Do the thing";
-choices[2]="Goodbye";
+text="I like trees";
 </string>
           </argument>
         </arguments>
@@ -81,11 +78,11 @@ choices[2]="Goodbye";
             <string>draw_self();
 if (draw==true) {
     draw_set_color(c_black);
-    draw_rectangle(view_xview + 8, view_yview + 990,view_xview + 1524, view_yview + 1090, false);
+    draw_rectangle(view_xview + 8, view_yview + 648,view_xview + 1016, view_yview + 748, false);
     draw_set_color(c_white);
     draw_set_valign(fa_right);
     draw_set_halign(fa_left);
-    draw_text(view_xview + 28, view_yview + 1090, text);
+    draw_text(view_xview + 28, view_yview + 748, text);
 }
 </string>
           </argument>
@@ -109,21 +106,7 @@ if (draw==true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(conversation==true) {
-    //end the conversation if it says goodbye
-    if(choice==2) {
-        draw=false;
-        conversation=false;
-        choice=0;
-        text=choices[choice];
-    }
-    //else go to next step of conversation
-    else {
-        choice++;
-        text=choices[choice];
-    }
-}
-else if(distance_to_object(obj_hero) &lt; 64) {
+            <string>if(distance_to_object(obj_hero) &lt; 64) {
     if(draw==true) {
         draw=false;
         conversation=false;
