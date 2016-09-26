@@ -26,7 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>draw=false;
-text="Hello";
+text="";
+choice1="A";
+choice2="S";
+choice3="D";
+choice4="W";
 </string>
           </argument>
         </arguments>
@@ -78,11 +82,34 @@ text="Hello";
             <string>draw_self();
 if (draw==true) {
     draw_set_color(c_black);
-    draw_rectangle(view_xview + 8, view_yview + 990,view_xview + 1524, view_yview + 1090, false);
+    //draw the character's statement/question
+    draw_rectangle(view_xview + 8, view_yview + 790,view_xview + 1524, view_yview + 890, false);
+    //draw the possible responses
+    draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
+    draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
+    draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
+    draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+    //highlight the selected response
+    draw_set_color(c_gray);
+    switch (dialogueChoice) {
+        case 1: draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
+                break;
+        case 2: draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+                break;
+        case 3: draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
+                break;
+        case 4: draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
+                break;
+    }
     draw_set_color(c_white);
     draw_set_valign(fa_right);
     draw_set_halign(fa_left);
-    draw_text(view_xview + 28, view_yview + 1090, text);
+    draw_text(view_xview + 28, view_yview + 890, text);
+    draw_text(view_xview + 28, view_yview + 1000, choice1);
+    draw_text(view_xview + 28, view_yview + 1110, choice3);
+    draw_text(view_xview + 780, view_yview + 1000, choice4);
+    draw_text(view_xview + 780, view_yview + 1110, choice2);
+    draw_set_color(c_black);
 }
 </string>
           </argument>
@@ -112,27 +139,42 @@ if (draw==true) {
 }
 
 if(conversation==true) {
+    switch (choice) {
+        case 0:
+            if (dialogueChoice==-1) {
+                text = "Three Years";
+                choice1 = "interest";
+                choice2 = "my musles";
+                choice3 = "good king?";
+                choice4 = "bye";
+            }
+            else if (dialogueChoice==1) {
+                choice = 1;
+                dialogueChoice = -1;
+            }
+            else {
+                dialogueChoice = -1;
+                choice = 99;
+            }
+            break;
+        case 1:
+            if (dialogueChoice==-1) {
+                text = "What do you need?";
+                choice1 = "tips";
+                choice2 = "you suck";
+                choice3 = "gimme stuff";
+                choice4 = "nevermind";
+            }
+            break;
+                
+        default: text = "something went wrong";
+            break;
+    }
     //end the conversation if it says goodbye
-    if(choice==3) {
+    if(choice==99) {
         draw=false;
         conversation=false;
         choice=0;
-        text="Hello";
-    }
-    //else go to next step of conversation
-    else {
-        switch (choice)
-        {
-            case 0: text = "Hello";
-                    break;
-            case 1: text = "Do the thing.";
-                    break;
-            case 2: text = "Goodbye";
-                    break;
-            default: text = "something went wrong";
-                    break;
-        }
-        choice++;
     }
 }
 else {
