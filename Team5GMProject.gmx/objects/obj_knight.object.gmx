@@ -166,8 +166,28 @@ if(conversation==true) {
             else if (dialogueChoice==4) { choice = 5; dialogueChoice = -1; }
             break;
         case 2:
+            if (dialogueChoice==-1) {
+                text = "You always want to keep your eye on your target.#Focus then when the time is right breath in when you pull the string on your bow and exhale when you release.";
+                choice1 = "";
+                choice2 = "";
+                choice3 = "";
+                choice4 = "";
+                choice = 3;
+            }
             break;
         case 3:
+            if (dialogueChoice==-1) {
+                text = "What else do you need help with?";
+                choice1 = "What tips can you give me?";
+                choice2 = "I’ve never even seen you hit a target before.";
+                choice3 = "I want to practice.#Can you lend me a bow and some arrows?";
+                choice4 = "Never mind.";
+            }
+            else if (dialogueChoice==1) { choice = 2; dialogueChoice = -1; }
+            else if (dialogueChoice==2) { choice = 3; dialogueChoice = -1; }
+            else if (dialogueChoice==3) { choice = 4; dialogueChoice = -1; }
+            else if (dialogueChoice==4) { choice = 5; dialogueChoice = -1; }
+            break;
             break;
         case 4:
             break;
@@ -182,16 +202,15 @@ if(conversation==true) {
             else if (dialogueChoice==1) { choice = 1; dialogueChoice = -1; }
             else { choice = 99; dialogueChoice = -1; }
             break;
+        case 99: //case for ending the conversation
+            draw=false;
+            conversation=false;
+            dialogueChoice=-1;
+            choice=0;
+            break;
                 
         default: text = "something went wrong";
             break;
-    }
-    //end the conversation if it says goodbye
-    if(choice==99) {
-        draw=false;
-        conversation=false;
-        dialogueChoice=-1;
-        choice=0;
     }
 }
 else {
