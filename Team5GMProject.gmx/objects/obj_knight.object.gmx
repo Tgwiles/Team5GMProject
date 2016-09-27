@@ -142,29 +142,35 @@ if(conversation==true) {
     switch (choice) {
         case 0:
             if (dialogueChoice==-1) {
-                text = "Three #Years";
-                choice1 = "interest";
-                choice2 = "my musles";
-                choice3 = "good king?";
-                choice4 = "bye";
+                text = "Three years I’ve worked for his majesty and have never seen a squire as skinny as you.";
+                choice1 = "I have an interest in learning archery.";
+                choice2 = "My muscles are still bigger than yours.";
+                choice3 = "What do you think of the King?";
+                choice4 = "I have to go.";
             }
-            else if (dialogueChoice==1) {
-                choice = 1;
-                dialogueChoice = -1;
-            }
-            else {
-                dialogueChoice = -1;
-                choice = 99;
-            }
+            else if (dialogueChoice==1) { choice = 1; dialogueChoice = -1; }
+            else { choice = 99; dialogueChoice = -1; }
             break;
         case 1:
             if (dialogueChoice==-1) {
-                text = "What do you need?";
-                choice1 = "tips";
-                choice2 = "you suck";
-                choice3 = "gimme stuff";
-                choice4 = "nevermind";
+                text = "Ahh, finally coming to your senses then, what do you need help with?";
+                choice1 = "What tips can you give me?";
+                choice2 = "I’ve never even seen you hit a target before.";
+                choice3 = "I want to practice.#Can you lend me a bow and some arrows?";
+                choice4 = "Never mind.";
             }
+            else if (dialogueChoice==1) { choice = 2; dialogueChoice = -1; }
+            else if (dialogueChoice==2) { choice = 3; dialogueChoice = -1; }
+            else if (dialogueChoice==3) { choice = 4; dialogueChoice = -1; }
+            else if (dialogueChoice==4) { choice = 0; dialogueChoice = -1; }
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
             break;
                 
         default: text = "something went wrong";
@@ -174,6 +180,7 @@ if(conversation==true) {
     if(choice==99) {
         draw=false;
         conversation=false;
+        dialogueChoice=-1;
         choice=0;
     }
 }
@@ -205,6 +212,8 @@ else {
             <kind>1</kind>
             <string>if (conversation==true and draw == true) 
 {
+choice=0;
+dialogueChoice=-1;
 conversation = false;
 draw = false;
 }
