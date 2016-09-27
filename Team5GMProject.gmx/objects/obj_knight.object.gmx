@@ -139,6 +139,7 @@ if (draw==true) {
 }
 
 if(conversation==true) {
+    repeat (2)
     switch (choice) {
         case 0:
             if (dialogueChoice==-1) {
@@ -172,7 +173,7 @@ if(conversation==true) {
             break;
         case 5:
             if (dialogueChoice==-1) {
-                text = "is there anything else you want to ask?";
+                text = "Is there anything else you want to ask?";
                 choice1 = "I have an interest in learning archery.";
                 choice2 = "My muscles are still bigger than yours.";
                 choice3 = "What do you think of the King?";
