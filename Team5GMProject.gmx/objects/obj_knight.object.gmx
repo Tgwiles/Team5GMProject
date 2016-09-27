@@ -162,7 +162,7 @@ if(conversation==true) {
             else if (dialogueChoice==1) { choice = 2; dialogueChoice = -1; }
             else if (dialogueChoice==2) { choice = 3; dialogueChoice = -1; }
             else if (dialogueChoice==3) { choice = 4; dialogueChoice = -1; }
-            else if (dialogueChoice==4) { choice = 0; dialogueChoice = -1; }
+            else if (dialogueChoice==4) { choice = 5; dialogueChoice = -1; }
             break;
         case 2:
             break;
@@ -171,6 +171,15 @@ if(conversation==true) {
         case 4:
             break;
         case 5:
+            if (dialogueChoice==-1) {
+                text = "is there anything else you want to ask?";
+                choice1 = "I have an interest in learning archery.";
+                choice2 = "My muscles are still bigger than yours.";
+                choice3 = "What do you think of the King?";
+                choice4 = "I have to go.";
+            }
+            else if (dialogueChoice==1) { choice = 1; dialogueChoice = -1; }
+            else { choice = 99; dialogueChoice = -1; }
             break;
                 
         default: text = "something went wrong";
