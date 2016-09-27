@@ -496,8 +496,8 @@ choice=0;</code>
     <instance objName="obj_CenterGrass" x="1728" y="2496" name="inst_D5E4B7B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CenterGrass" x="1728" y="2560" name="inst_2BCA4206" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CenterGrass" x="1728" y="2624" name="inst_CE9C2CE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree" x="1728" y="2688" name="inst_5A9230D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree" x="1728" y="2560" name="inst_5107B23D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="1728" y="2688" name="inst_5A9230D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="1728" y="2560" name="inst_5107B23D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CenterGrass" x="1792" y="2432" name="inst_FA268769" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CenterGrass" x="1792" y="2496" name="inst_B3D7F4E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CenterGrass" x="1792" y="2560" name="inst_9CA95A2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -789,9 +789,16 @@ choice=0;</code>
     <instance objName="obj_TrainingDummy" x="2880" y="1856" name="inst_DB6C07A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TrainingDummy" x="2880" y="1664" name="inst_09AD4880" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TrainingDummy" x="2880" y="1472" name="inst_2AA8F8F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree" x="1472" y="2560" name="inst_F4E10A95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Tree" x="1472" y="2688" name="inst_53B00DAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="1472" y="2560" name="inst_F4E10A95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="1472" y="2688" name="inst_53B00DAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawner" x="1600" y="960" name="inst_7FF4D786" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grasstuft1" x="1344" y="256" name="inst_6478C63A" locked="0" code="" scaleX="0.533333361148834" scaleY="0.466666668653488" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grasstuft1" x="1408" y="192" name="inst_C1F378DF" locked="0" code="" scaleX="0.533333361148834" scaleY="0.466666668653488" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grasstuft1" x="1600" y="128" name="inst_231F14B6" locked="0" code="" scaleX="0.533333361148834" scaleY="0.466666668653488" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grasstuft1" x="1728" y="256" name="inst_565ED8C6" locked="0" code="" scaleX="0.533333361148834" scaleY="0.466666668653488" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grasstuft1" x="1664" y="192" name="inst_B62BC250" locked="0" code="" scaleX="0.533333361148834" scaleY="0.466666668653488" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grasstuft2" x="1856" y="256" name="inst_69270124" locked="0" code="" scaleX="0.711111128330231" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grasstuft2" x="1536" y="192" name="inst_29DDE836" locked="0" code="" scaleX="0.711111128330231" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -23,7 +23,10 @@
     <sprite>sprites\spr_DialogueBox</sprite>
     <sprite>sprites\spr_TrainingDummy</sprite>
     <sprite>sprites\spr_CenterGrass</sprite>
-    <sprite>sprites\spr_Tree</sprite>
+    <sprite>sprites\spr_TreeNear</sprite>
+    <sprite>sprites\spr_TreeFar</sprite>
+    <sprite>sprites\spr_grasstuft1</sprite>
+    <sprite>sprites\spr_grasstuft2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -47,12 +50,14 @@
     <object>objects\obj_CastleFloor</object>
     <object>objects\obj_target</object>
     <object>objects\obj_MainDoor</object>
-    <object>objects\obj_DialogueBox</object>
     <object>objects\obj_TrainingDummy</object>
-    <object>objects\obj_Tree</object>
+    <object>objects\obj_TreeNear</object>
+    <object>objects\obj_TreeFar</object>
     <object>objects\obj_CenterGrass</object>
     <object>objects\obj_text</object>
     <object>objects\obj_spawner</object>
+    <object>objects\obj_grasstuft1</object>
+    <object>objects\obj_grasstuft2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
