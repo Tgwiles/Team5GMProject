@@ -102,13 +102,13 @@ if (draw==true) {
                 break;
     }
     draw_set_color(c_white);
-    draw_set_valign(fa_right);
-    draw_set_halign(fa_left);
-    draw_text(view_xview + 28, view_yview + 890, text);
-    draw_text(view_xview + 28, view_yview + 1000, choice1);
-    draw_text(view_xview + 28, view_yview + 1110, choice3);
-    draw_text(view_xview + 780, view_yview + 1000, choice4);
-    draw_text(view_xview + 780, view_yview + 1110, choice2);
+    draw_set_valign(fa_center);
+    draw_set_halign(fa_center);
+    draw_text(view_xview + 766, view_yview + 840, text);
+    draw_text(view_xview + 384, view_yview + 950, choice1);
+    draw_text(view_xview + 384, view_yview + 1060, choice3);
+    draw_text(view_xview + 1150, view_yview + 950, choice4);
+    draw_text(view_xview + 1150, view_yview + 1060, choice2);
     draw_set_color(c_black);
 }
 </string>
@@ -142,7 +142,7 @@ if(conversation==true) {
     switch (choice) {
         case 0:
             if (dialogueChoice==-1) {
-                text = "Three Years";
+                text = "Three #Years";
                 choice1 = "interest";
                 choice2 = "my musles";
                 choice3 = "good king?";
