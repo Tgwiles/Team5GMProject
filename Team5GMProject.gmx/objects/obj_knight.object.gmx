@@ -149,10 +149,27 @@ if(conversation==true) {
                 choice3 = "What do you think of the King?";
                 choice4 = "I have to go.";
             }
-            else if (dialogueChoice==1) { choice = 1; dialogueChoice = -1; }
-            else { choice = 99; dialogueChoice = -1; }
+            else if (dialogueChoice==1) { choice = 2;}
+            else if (dialogueChoice==2) { choice = 7;}
+            else if (dialogueChoice==3) { choice = 8;}
+            else if (dialogueChoice==4) { choice = 11;}
+            dialogueChoice = -1;
             break;
         case 1:
+            if (dialogueChoice==-1) {
+                text = "Is there anything else you want to ask?";
+                choice1 = "I have an interest in learning archery.";
+                choice2 = "My muscles are still bigger than yours.";
+                choice3 = "What do you think of the King?";
+                choice4 = "I have to go.";
+            }
+            else if (dialogueChoice==1) { choice = 3;}
+            else if (dialogueChoice==2) { choice = 7;}
+            else if (dialogueChoice==3) { choice = 8;}
+            else if (dialogueChoice==4) { choice = 11;}
+            dialogueChoice = -1;
+            break;
+        case 2:
             if (dialogueChoice==-1) {
                 text = "Ahh, finally coming to your senses then, what do you need help with?";
                 choice1 = "What tips can you give me?";
@@ -160,20 +177,11 @@ if(conversation==true) {
                 choice3 = "I want to practice.#Can you lend me a bow and some arrows?";
                 choice4 = "Never mind.";
             }
-            else if (dialogueChoice==1) { choice = 2; dialogueChoice = -1; }
-            else if (dialogueChoice==2) { choice = 3; dialogueChoice = -1; }
-            else if (dialogueChoice==3) { choice = 4; dialogueChoice = -1; }
-            else if (dialogueChoice==4) { choice = 5; dialogueChoice = -1; }
-            break;
-        case 2:
-            if (dialogueChoice==-1) {
-                text = "You always want to keep your eye on your target.#Focus then when the time is right breath in when you pull the string on your bow and exhale when you release.";
-                choice1 = "";
-                choice2 = "";
-                choice3 = "";
-                choice4 = "";
-                choice = 3;
-            }
+            else if (dialogueChoice==1) { choice = 4;}
+            else if (dialogueChoice==2) { choice = 5;}
+            else if (dialogueChoice==3) { choice = 6;}
+            else if (dialogueChoice==4) { choice = 1;}
+            dialogueChoice = -1;
             break;
         case 3:
             if (dialogueChoice==-1) {
@@ -183,24 +191,85 @@ if(conversation==true) {
                 choice3 = "I want to practice.#Can you lend me a bow and some arrows?";
                 choice4 = "Never mind.";
             }
-            else if (dialogueChoice==1) { choice = 2; dialogueChoice = -1; }
-            else if (dialogueChoice==2) { choice = 3; dialogueChoice = -1; }
-            else if (dialogueChoice==3) { choice = 4; dialogueChoice = -1; }
-            else if (dialogueChoice==4) { choice = 5; dialogueChoice = -1; }
-            break;
+            else if (dialogueChoice==1) { choice = 4;}
+            else if (dialogueChoice==2) { choice = 5;}
+            else if (dialogueChoice==3) { choice = 6;}
+            else if (dialogueChoice==4) { choice = 1;}
+            dialogueChoice = -1;
             break;
         case 4:
+            text = "You always want to keep your eye on your target.#Focus then when the time is right breath in when you pull the string on your bow and exhale when you release.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 3;
+            dialogueChoice = -1;
             break;
         case 5:
-            if (dialogueChoice==-1) {
-                text = "Is there anything else you want to ask?";
-                choice1 = "I have an interest in learning archery.";
-                choice2 = "My muscles are still bigger than yours.";
-                choice3 = "What do you think of the King?";
-                choice4 = "I have to go.";
+            text = "Blasphemy, my arrow flies true every time.#I don’t need your negativity messing up my aim. Away with you.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
+            dialogueChoice = -1;
+            break;
+        case 6:
+            if (hasBow) {
+                text = "I already gave you a bow!";
             }
-            else if (dialogueChoice==1) { choice = 1; dialogueChoice = -1; }
-            else { choice = 99; dialogueChoice = -1; }
+            else {
+                text = "Of course, take this set to keep. Remember it takes lot of time#to get a good as me, don’t forget to spend a lot of time practicing.";
+                hasBow = true;
+            }
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 3;
+            dialogueChoice = -1;
+            break;
+        case 7:
+            text = "You wish, I have a draw strength like no other.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 1;
+            dialogueChoice = -1;
+            break;
+        case 8:
+            text = "Great man the King is, not as great as me of course;#he does his best to rule the kingdom especially with what’s going on with-";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 9;
+            dialogueChoice = -1;
+            break;
+        case 9:
+            //just a thing used to hop to the last step without skipping anything
+            choice = 10;
+            dialogueChoice = -1;
+            break;
+        case 10:
+            text = "Forget I said that, in fact forget I said anything.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
+            dialogueChoice = -1;
+            break;
+        case 11:
+            text = "Best of luck with your training, may your strength one day come close to mine.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
+            dialogueChoice = -1;
             break;
         case 99: //case for ending the conversation
             draw=false;

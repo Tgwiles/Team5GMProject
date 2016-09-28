@@ -28,9 +28,13 @@
             <string>//global variable dialogueChoice is what will be used in order 
 //to have the branching dialogue work properly
 //values should only range 1-4
+//value of -1 means none selected
 
 globalvar dialogueChoice;
 dialogueChoice = -1;
+
+globalvar hasBow;
+hasBow = false;
 </string>
           </argument>
         </arguments>
