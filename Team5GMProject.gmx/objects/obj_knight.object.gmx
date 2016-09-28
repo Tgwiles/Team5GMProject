@@ -205,7 +205,7 @@ if(conversation==true) {
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 3;
+            choice = 12;
             dialogueChoice = -1;
             break;
         case 5:
@@ -229,7 +229,7 @@ if(conversation==true) {
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 3;
+            choice = 13;
             dialogueChoice = -1;
             break;
         case 7:
@@ -238,7 +238,7 @@ if(conversation==true) {
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 1;
+            choice = 14;
             dialogueChoice = -1;
             break;
         case 8:
@@ -271,6 +271,21 @@ if(conversation==true) {
             choice3 = "";
             choice4 = "";
             choice = 99;
+            dialogueChoice = -1;
+            break;
+        case 12:
+            //just a thing used to hop to the last step without skipping anything
+            choice = 3;
+            dialogueChoice = -1;
+            break;
+        case 13:
+            //just a thing used to hop to the last step without skipping anything
+            choice = 3;
+            dialogueChoice = -1;
+            break;
+        case 14:
+            //just a thing used to hop to the last step without skipping anything
+            choice = 1;
             dialogueChoice = -1;
             break;
         case 99: //case for ending the conversation
