@@ -58,6 +58,7 @@
     <object>objects\obj_spawner</object>
     <object>objects\obj_grasstuft1</object>
     <object>objects\obj_grasstuft2</object>
+    <object>objects\obj_contoller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
