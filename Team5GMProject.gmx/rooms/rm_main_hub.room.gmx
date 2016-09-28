@@ -16,7 +16,8 @@ conversation=false;
 globalvar choice;
 choice=0;
 
-audio_play_sound(snd_TrainingGround, 10, true);</code>
+audio_play_sound(snd_TrainingGround, 10, true);
+audio_stop_sound(snd_Forest);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
