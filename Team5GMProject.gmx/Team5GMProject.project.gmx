@@ -61,9 +61,17 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
-    <room>rooms\rm_grass</room>
+    <room>rooms\rm_TransitionForest</room>
     <room>rooms\rm_mountain1</room>
-    <room>rooms\rm_forest1</room>
+    <room>rooms\rm_forest_3B</room>
+    <room>rooms\rm_forest_3A</room>
+    <room>rooms\rm_forest_3C</room>
+    <room>rooms\rm_forest_2A</room>
+    <room>rooms\rm_forest_2B</room>
+    <room>rooms\rm_forest_2C</room>
+    <room>rooms\rm_forest_1A</room>
+    <room>rooms\rm_forest_1B</room>
+    <room>rooms\rm_forest_1C</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

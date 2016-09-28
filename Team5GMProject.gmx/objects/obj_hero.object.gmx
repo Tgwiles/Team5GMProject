@@ -140,7 +140,7 @@ speed = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_grass);
+            <string>room_goto(rm_TransitionForest);
 </string>
           </argument>
         </arguments>
@@ -179,7 +179,7 @@ speed = 6;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>rm_grass</string>
+            <string>rm_TransitionForest</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -284,7 +284,7 @@ speed = 6;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>rm_grass</string>
+            <string>rm_TransitionForest</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -350,7 +350,7 @@ speed = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_forest1);
+            <string>room_goto(rm_forest_3B);
 </string>
           </argument>
         </arguments>
@@ -389,7 +389,7 @@ speed = 6;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>rm_forest1</string>
+            <string>rm_forest_3B</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -455,7 +455,7 @@ speed = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_grass);
+            <string>room_goto(rm_TransitionForest);
 </string>
           </argument>
         </arguments>

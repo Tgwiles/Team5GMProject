@@ -111,7 +111,7 @@
     <instance objName="obj_TreeFar" x="704" y="192" name="inst_F4F34ADD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="800" y="224" name="inst_1279C017" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeNear" x="0" y="768" name="inst_6356BFD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeNear" x="480" y="768" name="inst_3EAC89E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="768" y="736" name="inst_3EAC89E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeNear" x="576" y="736" name="inst_483D3775" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeNear" x="672" y="768" name="inst_852F8422" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_roomtarget" x="0" y="352" name="inst_C76D8059" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
