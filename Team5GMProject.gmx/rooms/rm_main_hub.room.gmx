@@ -10,7 +10,10 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
+audio_play_sound(snd_TrainingGround, 10, true);
+audio_stop_sound(snd_Forest);</code>
   <code>audio_play_sound(snd_TrainingGround, 10, true);</code>
+>>>>>>> origin/master
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

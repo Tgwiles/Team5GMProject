@@ -6,6 +6,8 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_TrainingGround</sound>
+    <sound>sound\snd_Castle</sound>
+    <sound>sound\snd_Forest</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_hero_front</sprite>
@@ -27,6 +29,7 @@
     <sprite>sprites\spr_TreeFar</sprite>
     <sprite>sprites\spr_grasstuft1</sprite>
     <sprite>sprites\spr_grasstuft2</sprite>
+    <sprite>sprites\spr_roomtarget</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -53,6 +56,7 @@
     <object>objects\obj_CenterGrass</object>
     <object>objects\obj_grasstuft1</object>
     <object>objects\obj_grasstuft2</object>
+    <object>objects\obj_roomtarget</object>
     <object>objects\obj_contoller</object>
   </objects>
   <rooms name="rooms">
