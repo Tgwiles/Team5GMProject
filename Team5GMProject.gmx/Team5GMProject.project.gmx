@@ -36,9 +36,7 @@
     <background>background\bck_CenterDirt</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\scr_text.gml</script>
-  </scripts>
+  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt</font>
   </fonts>
@@ -57,15 +55,18 @@
     <object>objects\obj_TreeNear</object>
     <object>objects\obj_TreeFar</object>
     <object>objects\obj_CenterGrass</object>
-    <object>objects\obj_text</object>
-    <object>objects\obj_spawner</object>
     <object>objects\obj_grasstuft1</object>
     <object>objects\obj_grasstuft2</object>
+<<<<<<< HEAD
     <object>objects\obj_roomtarget</object>
+=======
+    <object>objects\obj_contoller</object>
+>>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
     <room>rooms\rm_grass</room>
+    <room>rooms\rm_mountain1</room>
     <room>rooms\rm_forest1</room>
   </rooms>
   <help>

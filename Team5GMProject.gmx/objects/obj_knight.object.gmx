@@ -104,6 +104,8 @@ if (draw==true) {
     draw_set_color(c_white);
     draw_set_valign(fa_center);
     draw_set_halign(fa_center);
+
+    draw_set_font(fnt);
     draw_text(view_xview + 766, view_yview + 840, text);
     draw_text(view_xview + 384, view_yview + 950, choice1);
     draw_text(view_xview + 384, view_yview + 1060, choice3);
