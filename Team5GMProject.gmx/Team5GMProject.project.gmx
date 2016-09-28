@@ -59,6 +59,7 @@
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
     <room>rooms\rm_grass</room>
+    <room>rooms\rm_mountain1</room>
     <room>rooms\rm_forest1</room>
   </rooms>
   <help>
