@@ -22,14 +22,13 @@
     <sprite>sprites\spr_CastleFloor</sprite>
     <sprite>sprites\spr_target</sprite>
     <sprite>sprites\spr_MainDoor</sprite>
-    <sprite>sprites\spr_DialogueBox</sprite>
     <sprite>sprites\spr_TrainingDummy</sprite>
     <sprite>sprites\spr_CenterGrass</sprite>
     <sprite>sprites\spr_TreeNear</sprite>
     <sprite>sprites\spr_TreeFar</sprite>
     <sprite>sprites\spr_grasstuft1</sprite>
     <sprite>sprites\spr_grasstuft2</sprite>
-    <sprite>sprites\spr_roomtarget</sprite>
+    <sprite>sprites\spr_warpRoom</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -56,7 +55,7 @@
     <object>objects\obj_CenterGrass</object>
     <object>objects\obj_grasstuft1</object>
     <object>objects\obj_grasstuft2</object>
-    <object>objects\obj_roomtarget</object>
+    <object>objects\obj_warpRoom</object>
     <object>objects\obj_contoller</object>
   </objects>
   <rooms name="rooms">

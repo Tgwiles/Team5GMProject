@@ -6,9 +6,9 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
-  <colour>32768</colour>
+  <colour>4227072</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>0</enableViews>
@@ -61,6 +61,8 @@
     <instance objName="obj_TreeNear" x="832" y="576" name="inst_1114468F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="864" y="384" name="inst_47F4C47B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="832" y="192" name="inst_1D6FA868" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warpRoom" x="0" y="288" name="inst_D65EC8DA" locked="0" code="target_x = 928;&#xA;target_y = 416;&#xA;&#xA;target_r = rm_forest_3B;&#xA;" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warpRoom" x="352" y="0" name="inst_D5C84452" locked="0" code="target_x = 544;&#xA;target_y = 640;&#xA;&#xA;target_r = rm_forest_2C;&#xA;" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
