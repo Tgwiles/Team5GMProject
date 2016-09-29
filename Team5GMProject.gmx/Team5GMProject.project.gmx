@@ -34,6 +34,7 @@
   <backgrounds name="background">
     <background>background\bck_grass</background>
     <background>background\bck_CenterDirt</background>
+    <background>background\bck_StoneFloor</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -73,6 +74,7 @@
     <room>rooms\rm_forest_1A</room>
     <room>rooms\rm_forest_1B</room>
     <room>rooms\rm_forest_1C</room>
+    <room>rooms\rm_Maze</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
