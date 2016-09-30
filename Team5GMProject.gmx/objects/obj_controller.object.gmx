@@ -33,8 +33,15 @@
 globalvar dialogueChoice;
 dialogueChoice = -1;
 
+//items
 globalvar hasBow;
 hasBow = false;
+globalvar hasAxe;
+hasAxe = false;
+
+//quest progress
+globalvar branchesCut;
+branchesCut = false;
 
 globalvar conversation;
 conversation=false;

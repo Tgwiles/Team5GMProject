@@ -70,7 +70,7 @@
     <object>objects\obj_grasstuft1</object>
     <object>objects\obj_grasstuft2</object>
     <object>objects\obj_warpRoom</object>
-    <object>objects\obj_contoller</object>
+    <object>objects\obj_controller</object>
     <object>objects\obj_CenterWarer</object>
     <object>objects\obj_Wolf</object>
     <object>objects\obj_Rabbit</object>
