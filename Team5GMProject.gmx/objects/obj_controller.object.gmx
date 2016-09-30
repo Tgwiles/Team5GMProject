@@ -38,6 +38,8 @@ globalvar hasBow;
 hasBow = false;
 globalvar hasAxe;
 hasAxe = false;
+globalvar sharpAxe;
+sharpAxe = false;
 
 //quest progress
 globalvar branchesCut;

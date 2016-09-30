@@ -170,7 +170,7 @@ if(conversation==true &amp;&amp; myConversation==true) {
     repeat (2)
     switch (choice) {
         case 0:
-            text = "You pick up the axe.";
+            text = "You pick up the dull axe.";
             choice = 1;
             choice1 = "";
             choice2 = "";
