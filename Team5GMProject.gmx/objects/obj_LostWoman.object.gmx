@@ -94,9 +94,9 @@ if (draw==true) {
     switch (dialogueChoice) {
         case 1: draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
                 break;
-        case 3: draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+        case 2: draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
                 break;
-        case 2: draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
+        case 3: draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
                 break;
         case 4: draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
                 break;
@@ -151,11 +151,7 @@ if(conversation==true) {
                 choice3 = "";
                 choice4 = "";
                 dialogueChoice = -1;
-                }
-            else if (dialogueChoice==1) {choice = 2;}
-            else if (dialogueChoice==2) {choice = 7;}
-            else if (dialogueChoice==3) {choice = 99;}
-            else if (dialogueChoice==4) {choice = 99;}
+            }
             break;
             
           case 1:
@@ -163,14 +159,10 @@ if(conversation==true) {
                 text = "Halt! Those who wish to cross my bridge must first answer me my three questions.";
                 choice1 = "Ask me these question, I am not afraid.";
                 choice2 = "I do not need to tell you anything.";
-                choice3 = "";
-                choice4 = "";
                 }
                 
             else if (dialogueChoice==1) {choice = 2;}
             else if (dialogueChoice==2) {choice = 7;}
-            else if (dialogueChoice==3) {choice = 99;}
-            else if (dialogueChoice==4) {choice = 99;}
             dialogueChoice = -1;
             break;
             case 2:
@@ -178,13 +170,9 @@ if(conversation==true) {
                 text = "What is your name?";
                 choice1 = "None of your business";
                 choice2 = "Squire.";
-                choice3 = "";
-                choice4 = "";
             }
             else if (dialogueChoice==1) {choice = 3;}
             else if (dialogueChoice==2) {choice = 4;}
-            else if (dialogueChoice==3) {choice = 99;}
-            else if (dialogueChoice==4) {choice = 99;}
             dialogueChoice = -1;
             break; 
             case 3:
@@ -193,16 +181,14 @@ if(conversation==true) {
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 99;
+            choice = 12;
             dialogueChoice = -1;
             break;       
             case 4:
             if (dialogueChoice==-1) {
                 text = "What is your quest?";
                 choice1 = "Not sure.";
-                choice2 = "To find the golden fruit."; 
-                choice3 = "";
-                choice4 = "";
+                choice2 = "To find the golden fruit.";
             }
             else if (dialogueChoice==1) {choice = 5;}
             else if (dialogueChoice==2) {choice = 6;}
@@ -214,7 +200,7 @@ if(conversation==true) {
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 99;
+            choice = 12;
             dialogueChoice = -1;
             break;             
             case 6:
