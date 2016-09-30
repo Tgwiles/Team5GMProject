@@ -58,6 +58,20 @@
     <instance objName="obj_warpRoom" x="416" y="736" name="inst_B7A099E6" locked="0" code="target_x = 480;&#xA;target_y = 96;&#xA;&#xA;target_r = rm_forest_3C;&#xA;" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="0" y="288" name="inst_311B1E09" locked="0" code="target_x = 896;&#xA;target_y = 384;&#xA;&#xA;target_r = rm_forest_2B;&#xA;" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="416" y="0" name="inst_0461F0B3" locked="0" code="target_x = 480;&#xA;target_y = 672;&#xA;&#xA;target_r = rm_forest_1C;&#xA;" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="-32" y="192" name="inst_33E65032" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="96" y="192" name="inst_B4B4917E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="224" y="192" name="inst_14841E03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="352" y="192" name="inst_41003155" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="480" y="192" name="inst_374015AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="608" y="192" name="inst_28A18841" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="736" y="192" name="inst_A8C21AB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="736" y="768" name="inst_264118CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="608" y="768" name="inst_8D8AF6CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="480" y="768" name="inst_8EE70D5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="352" y="768" name="inst_FA8C3FE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="224" y="768" name="inst_1E70B273" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="96" y="768" name="inst_C43BB6F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="-32" y="768" name="inst_69AFED83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

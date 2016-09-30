@@ -51,14 +51,26 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_TreeFar" x="768" y="256" name="inst_5739C32B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeFar" x="128" y="256" name="inst_24CAA601" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeNear" x="128" y="704" name="inst_3A618AF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeNear" x="768" y="704" name="inst_618D5916" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="384" y="736" name="inst_7482E3AC" locked="0" code="target_x = 480;&#xA;target_y = 64;&#xA;&#xA;target_r = rm_forest_3B;&#xA;" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="0" y="288" name="inst_E201DE42" locked="0" code="target_x = 928;&#xA;target_y = 352;&#xA;&#xA;target_r = rm_forest_2A;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="992" y="320" name="inst_35C4BDD3" locked="0" code="target_x = 96;&#xA;target_y = 416;&#xA;&#xA;target_r = rm_forest_2C;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="384" y="0" name="inst_66DCFF26" locked="0" code="target_x = 544;&#xA;target_y = 672;&#xA;&#xA;target_r = rm_forest_1B;&#xA;" scaleX="8.22580623626709" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="-32" y="768" name="inst_322E3A49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="96" y="768" name="inst_8526B364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="896" y="768" name="inst_6C620FF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="800" y="768" name="inst_23600D4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="704" y="768" name="inst_9F85E947" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="224" y="768" name="inst_A3FEBF77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="896" y="320" name="inst_B938D28F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="0" y="288" name="inst_175BAFFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="0" y="192" name="inst_8BCB2B21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="128" y="192" name="inst_EA4856BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="896" y="192" name="inst_307B227B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="768" y="192" name="inst_724E0628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="896" y="672" name="inst_E9A052C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="-32" y="672" name="inst_150FF42E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="640" y="192" name="inst_5C5C2B87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="256" y="192" name="inst_27A5F298" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
