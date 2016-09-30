@@ -196,7 +196,7 @@ if(conversation==true &amp;&amp; myConversation==true) {
     repeat (2)
     switch (choice) {
         case 0:
-            if(hasAxe==false) {
+            if(sharpAxe==false) {
                 text = "There are branches blocking your way";
                 choice = 15;
             }
