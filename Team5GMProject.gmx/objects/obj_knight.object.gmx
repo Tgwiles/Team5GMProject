@@ -306,7 +306,7 @@ if(conversation==true) {
             draw=false;
             conversation=false;
             dialogueChoice=-1;
-            choice=1;
+            choice=0;
             break;
                 
         default: text = "something went wrong";
