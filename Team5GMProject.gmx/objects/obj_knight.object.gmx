@@ -84,11 +84,21 @@ if (draw==true) {
     draw_set_color(c_black);
     //draw the character's statement/question
     draw_rectangle(view_xview + 8, view_yview + 790,view_xview + 1524, view_yview + 890, false);
+    
     //draw the possible responses
-    draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
-    draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
-    draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
-    draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+    if(choice1 != "") {
+        draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
+    }
+    if(choice4 != "") {
+        draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
+    }
+    if(choice3 != "") {
+        draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
+    }
+    if(choice2 != "") {
+        draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+    }
+    
     //highlight the selected response
     draw_set_color(c_gray);
     switch (dialogueChoice) {
@@ -214,7 +224,7 @@ if(conversation==true) {
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 99;
+            choice = 15;
             dialogueChoice = -1;
             break;
         case 6:
@@ -261,7 +271,7 @@ if(conversation==true) {
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 99;
+            choice = 15;
             dialogueChoice = -1;
             break;
         case 11:
@@ -270,7 +280,7 @@ if(conversation==true) {
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 99;
+            choice = 15;
             dialogueChoice = -1;
             break;
         case 12:
@@ -288,11 +298,15 @@ if(conversation==true) {
             choice = 1;
             dialogueChoice = -1;
             break;
+        case 15:
+            choice = 99;
+            dialogueChoice = -1;
+            break;
         case 99: //case for ending the conversation
             draw=false;
             conversation=false;
             dialogueChoice=-1;
-            choice=0;
+            choice=1;
             break;
                 
         default: text = "something went wrong";

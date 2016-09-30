@@ -145,7 +145,7 @@ if(conversation==true) {
     switch (choice) {
         case 0:
             if (dialogueChoice==-1) {
-                text = "Halt, those who wish to cross my bridge must firs answer me my three questions";
+                text = "Halt! Those who wish to cross my bridge must first answer me my three questions.";
                 choice1 = "";
                 choice2 = "";
                 choice3 = "";
