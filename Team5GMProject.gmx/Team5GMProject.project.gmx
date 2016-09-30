@@ -30,10 +30,22 @@
     <sprite>sprites\spr_grasstuft1</sprite>
     <sprite>sprites\spr_grasstuft2</sprite>
     <sprite>sprites\spr_warpRoom</sprite>
+    <sprite>sprites\spr_Center_Water</sprite>
+    <sprite>sprites\spr_Horse</sprite>
+    <sprite>sprites\spr_Rabbit</sprite>
+    <sprite>sprites\spr_Wolf</sprite>
+    <sprite>sprites\spr_Fluffy</sprite>
+    <sprite>sprites\spr_CenterDarkDirt</sprite>
+    <sprite>sprites\spr_Axe</sprite>
+    <sprite>sprites\spr_Rock</sprite>
+    <sprite>sprites\spr_BlockingBranches</sprite>
+    <sprite>sprites\spr_Help</sprite>
+    <sprite>sprites\spr_GoldenTree</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
     <background>background\bck_CenterDirt</background>
+    <background>background\bck_StoneFloor</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -59,6 +71,19 @@
     <object>objects\obj_grasstuft2</object>
     <object>objects\obj_warpRoom</object>
     <object>objects\obj_contoller</object>
+    <object>objects\obj_CenterWarer</object>
+    <object>objects\obj_Wolf</object>
+    <object>objects\obj_Rabbit</object>
+    <object>objects\obj_Horse</object>
+    <object>objects\obj_Fluffy</object>
+    <object>objects\obj_CentrDarkDirt</object>
+    <object>objects\obj_Axe</object>
+    <object>objects\obj_SharpeningRock</object>
+    <object>objects\obj_BlockingRock</object>
+    <object>objects\obj_BlockingBranches</object>
+    <object>objects\obj_Help</object>
+    <object>objects\obj_Start</object>
+    <object>objects\obj_GoldenTree</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_hub</room>
@@ -73,6 +98,7 @@
     <room>rooms\rm_forest_1A</room>
     <room>rooms\rm_forest_1B</room>
     <room>rooms\rm_forest_1C</room>
+    <room>rooms\rm_Maze</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

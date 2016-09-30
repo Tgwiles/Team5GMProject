@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>46</width>
-  <height>45</height>
-  <data>images\bck_grass.png</data>
+  <width>62</width>
+  <height>62</height>
+  <data>images\bck_StoneFloor.png</data>
 </background>
