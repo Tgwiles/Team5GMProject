@@ -50,6 +50,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fnt</font>
+    <font>fonts\fnt_BK</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_hero</object>
