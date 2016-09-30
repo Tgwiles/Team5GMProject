@@ -217,6 +217,7 @@ if(conversation==true &amp;&amp; myConversation==true) {
         case 2:
             draw=false;
             conversation=false;
+            myConversation=false;
             choice = 0;
             dialogueChoice = -1;
             branchesCut = true;
@@ -229,6 +230,7 @@ if(conversation==true &amp;&amp; myConversation==true) {
         case 99: //case for ending the conversation
             draw=false;
             conversation=false;
+            myConversation=false;
             dialogueChoice=-1;
             choice=0;
             break;
