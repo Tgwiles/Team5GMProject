@@ -42,6 +42,7 @@
     <sprite>sprites\spr_Help</sprite>
     <sprite>sprites\spr_GoldenTree</sprite>
     <sprite>sprites\spr_Sword</sprite>
+    <sprite>sprites\spr_CaveMonster</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -88,6 +89,7 @@
     <object>objects\obj_Start</object>
     <object>objects\obj_GoldenTree</object>
     <object>objects\obj_Sword</object>
+    <object>objects\obj_CaveMonster</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
