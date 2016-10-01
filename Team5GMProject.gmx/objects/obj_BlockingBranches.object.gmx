@@ -96,7 +96,6 @@
           <argument>
             <kind>1</kind>
             <string>draw=false;
-myConversation=false;
 text="";
 choice1="A";
 choice2="S";
@@ -186,22 +185,24 @@ if (draw==true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(distance_to_object(obj_hero) &lt; 45) {
+            <string>if(distance_to_object(obj_hero) &lt; 64) {
     conversation=true;
-    myConversation=true;
     draw=true;
 }
 
-if(conversation==true &amp;&amp; myConversation==true) {
-    repeat (2)
+if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     switch (choice) {
         case 0:
-            if(sharpAxe==false) {
-                text = "There are branches blocking your way";
-                choice = 15;
+            if(sharpAxe) {
+                text = "You cut the branches out of your way.";
+                choice = 2;
+            }
+            else if(hasAxe) {
+                text = "This dull axe won't even be able to cut these branches.";
+                choice = 1
             }
             else {
-                text = "You cut down the branches";
+                text = "There are branches blocking your path.";
                 choice = 1;
             }
             choice1 = "";
@@ -211,37 +212,23 @@ if(conversation==true &amp;&amp; myConversation==true) {
             dialogueChoice = -1;
             break;
         case 1:
-            choice = 2;
+            draw=false;
+            conversation=false;
+            choice = 0;
             dialogueChoice = -1;
             break;
         case 2:
             draw=false;
             conversation=false;
-            myConversation=false;
             choice = 0;
             dialogueChoice = -1;
             branchesCut = true;
             instance_destroy();
             break;
-        case 15:
-            choice = 99;
-            dialogueChoice = -1;
-            break;
-        case 99: //case for ending the conversation
-            draw=false;
-            conversation=false;
-            myConversation=false;
-            dialogueChoice=-1;
-            choice=0;
-            break;
                 
         default: text = "something went wrong";
             break;
     }
-}
-else {
-    draw=false;
-    conversation=false;
 }
 </string>
           </argument>

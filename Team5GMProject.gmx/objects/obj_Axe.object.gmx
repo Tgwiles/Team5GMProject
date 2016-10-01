@@ -96,7 +96,6 @@
           <argument>
             <kind>1</kind>
             <string>draw=false;
-myConversation=false;
 text="";
 choice1="A";
 choice2="S";
@@ -162,12 +161,10 @@ if (draw==true) {
             <kind>1</kind>
             <string>if(distance_to_object(obj_hero) &lt; 64) {
     conversation=true;
-    myConversation=true;
     draw=true;
 }
 
-if(conversation==true &amp;&amp; myConversation==true) {
-    repeat (2)
+if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     switch (choice) {
         case 0:
             text = "You pick up the dull axe.";
@@ -179,10 +176,6 @@ if(conversation==true &amp;&amp; myConversation==true) {
             dialogueChoice = -1;
             break;
         case 1:
-            choice = 2;
-            dialogueChoice = -1;
-            break;
-        case 2:
             draw=false;
             conversation=false;
             choice = 0;
@@ -190,24 +183,10 @@ if(conversation==true &amp;&amp; myConversation==true) {
             hasAxe = true;
             instance_destroy();
             break;
-        case 15:
-            choice = 99;
-            dialogueChoice = -1;
-            break;
-        case 99: //case for ending the conversation
-            draw=false;
-            conversation=false;
-            dialogueChoice=-1;
-            choice=0;
-            break;
                 
         default: text = "something went wrong";
             break;
     }
-}
-else {
-    draw=false;
-    conversation=false;
 }
 </string>
           </argument>

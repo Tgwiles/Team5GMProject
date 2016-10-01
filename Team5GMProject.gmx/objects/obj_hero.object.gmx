@@ -192,9 +192,9 @@ speed = 6;
       </action>
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -206,11 +206,16 @@ speed = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dialogueChoice</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>4</string>
+            <string>if(dialogueChoice==-1) {
+    dialogueChoice=1;
+}
+if(dialogueChoice==3) {
+    dialogueChoice=1;
+}
+else if (dialogueChoice==4) {
+    dialogueChoice=2;
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -366,9 +371,9 @@ speed = 6;
       </action>
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -380,11 +385,16 @@ speed = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dialogueChoice</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>3</string>
+            <string>if(dialogueChoice==-1) {
+    dialogueChoice=1;
+}
+if(dialogueChoice==1) {
+    dialogueChoice=3;
+}
+else if (dialogueChoice==2) {
+    dialogueChoice=4;
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -540,9 +550,9 @@ speed = 6;
       </action>
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -554,11 +564,16 @@ speed = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dialogueChoice</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>2</string>
+            <string>if(dialogueChoice==-1) {
+    dialogueChoice=1;
+}
+if(dialogueChoice==1) {
+    dialogueChoice=2;
+}
+else if (dialogueChoice==3) {
+    dialogueChoice=4;
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -714,9 +729,9 @@ speed = 6;
       </action>
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -728,11 +743,16 @@ speed = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dialogueChoice</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
+            <string>if(dialogueChoice==-1) {
+    dialogueChoice=1;
+}
+else if(dialogueChoice==2) {
+    dialogueChoice=1;
+}
+else if (dialogueChoice==4) {
+    dialogueChoice=3;
+}
+</string>
           </argument>
         </arguments>
       </action>
