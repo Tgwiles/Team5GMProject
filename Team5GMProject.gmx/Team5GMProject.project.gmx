@@ -42,6 +42,7 @@
     <sprite>sprites\spr_Help</sprite>
     <sprite>sprites\spr_GoldenTree</sprite>
     <sprite>sprites\spr_Sword</sprite>
+    <sprite>sprites\spr_CaveMonster</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
