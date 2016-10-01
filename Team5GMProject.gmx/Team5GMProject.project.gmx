@@ -89,6 +89,7 @@
     <object>objects\obj_Start</object>
     <object>objects\obj_GoldenTree</object>
     <object>objects\obj_Sword</object>
+    <object>objects\obj_CaveMonster</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
