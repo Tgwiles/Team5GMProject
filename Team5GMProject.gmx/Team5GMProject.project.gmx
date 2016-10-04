@@ -43,6 +43,17 @@
     <sprite>sprites\spr_GoldenTree</sprite>
     <sprite>sprites\spr_Sword</sprite>
     <sprite>sprites\spr_CaveMonster</sprite>
+    <sprite>sprites\spr_fluffy_owner</sprite>
+    <sprite>sprites\spr_shop</sprite>
+    <sprite>sprites\spr_shop_no_sword</sprite>
+    <sprite>sprites\spr_shopkeeper</sprite>
+    <sprite>sprites\spr_gardener</sprite>
+    <sprite>sprites\spr_catlady</sprite>
+    <sprite>sprites\spr_anvil</sprite>
+    <sprite>sprites\spr_mathguy</sprite>
+    <sprite>sprites\spr_cabbagemerchant</sprite>
+    <sprite>sprites\spr_shadyguy</sprite>
+    <sprite>sprites\spr_carpenter</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -90,6 +101,16 @@
     <object>objects\obj_GoldenTree</object>
     <object>objects\obj_Sword</object>
     <object>objects\obj_CaveMonster</object>
+    <object>objects\obj_FluffyOwner</object>
+    <object>objects\obj_shop</object>
+    <object>objects\obj_shopkeeper</object>
+    <object>objects\obj_gardener</object>
+    <object>objects\obj_catlady</object>
+    <object>objects\obj_anvil</object>
+    <object>objects\obj_mathguy</object>
+    <object>objects\obj_cabbagemerchant</object>
+    <object>objects\obj_shadyguy</object>
+    <object>objects\obj_carpenter</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
@@ -108,6 +129,12 @@
     <room>rooms\rm_forest_1B</room>
     <room>rooms\rm_forest_1C</room>
     <room>rooms\rm_Maze</room>
+    <room>rooms\rm_castle_2</room>
+    <room>rooms\rm_castle_1</room>
+    <room>rooms\rm_castle_3</room>
+    <room>rooms\rm_castle_4</room>
+    <room>rooms\rm_castle_5</room>
+    <room>rooms\rm_castle_6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

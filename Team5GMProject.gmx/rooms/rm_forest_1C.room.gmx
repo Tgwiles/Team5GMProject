@@ -331,6 +331,7 @@
     <instance objName="obj_grasstuft2" x="544" y="256" name="inst_EC9AE9CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft2" x="608" y="544" name="inst_5ADE2E42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft2" x="160" y="192" name="inst_05B83E87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_FluffyOwner" x="736" y="384" name="inst_CE93A0B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -33,13 +33,36 @@
 globalvar dialogueChoice;
 dialogueChoice = -1;
 
-//items
+//training ground items
 globalvar hasBow;
 hasBow = false;
+
+//forest items
 globalvar hasAxe;
 hasAxe = false;
 globalvar sharpAxe;
 sharpAxe = false;
+globalvar hasTreat;
+hasTreat = false;
+globalvar hasFruit;
+hasFruit = false;
+
+//castle items
+globalvar money;
+money = 0;
+globalvar hasShovel;
+hasShovel = false;
+globalvar hasHammer;
+hasHammer = false;
+globalvar hasCat;
+hasCat = false;
+globalvar hasSword;
+hasSword = false;
+
+//cave items
+globalvar hasEgg;
+hasEgg = false;
+
 
 //quest progress
 globalvar branchesCut;
