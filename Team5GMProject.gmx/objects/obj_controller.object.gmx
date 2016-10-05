@@ -33,12 +33,6 @@
 globalvar dialogueChoice;
 dialogueChoice = -1;
 
-//conversation things
-globalvar conversation;
-conversation=false;
-globalvar choice;
-choice=0;
-
 //training ground items
 globalvar hasBow;
 hasBow = false;
@@ -69,9 +63,42 @@ hasSword = false;
 globalvar hasEgg;
 hasEgg = false;
 
+
 //quest progress
 globalvar branchesCut;
 branchesCut = false;
+
+//castle progress
+globalvar talkCatLady;
+talkCatLady = false;
+globalvar finishCatLady;
+finishCatLady = false;
+globalvar talkCabbageMerchant;
+talkCabbage = false;
+globalvar finishCabbageMerchant;
+finishCabbage = false;
+globalvar finishShadyGuy;
+finishShadyGuy = false;
+globalvar talkGardener;
+talkGardener = false;
+globalvar finishGardener;
+finishGardener = false;
+globalvar finishTreasure;
+finishTreasure = false;
+globalvar talkCarpenter;
+talkCarpenter = false;
+globalvar finishCarpenter;
+finishCarpenter = false;
+globalvar talkMathGuy;
+talkMathGuy = false;
+globalvar finishMathGuy;
+finishMathGuy = false;
+
+
+globalvar conversation;
+conversation=false;
+globalvar choice;
+choice=0;
 </string>
           </argument>
         </arguments>

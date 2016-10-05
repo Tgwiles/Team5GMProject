@@ -54,6 +54,9 @@
     <sprite>sprites\spr_cabbagemerchant</sprite>
     <sprite>sprites\spr_shadyguy</sprite>
     <sprite>sprites\spr_carpenter</sprite>
+    <sprite>sprites\spr_cabbagecart_spilled</sprite>
+    <sprite>sprites\spr_cabbagecart_stacked</sprite>
+    <sprite>sprites\spr_carpentersign</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -112,6 +115,8 @@
     <object>objects\obj_cabbagemerchant</object>
     <object>objects\obj_shadyguy</object>
     <object>objects\obj_carpenter</object>
+    <object>objects\obj_CabbageCart</object>
+    <object>objects\obj_WoodPile</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>

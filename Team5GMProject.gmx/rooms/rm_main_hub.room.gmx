@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_hero" x="1664" y="320" name="inst_79A9F64F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="128" y="192" name="inst_7432A93B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CenterCastleWall" x="448" y="2304" name="inst_70CDF5E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CenterCastleWall" x="192" y="2304" name="inst_F02A5019" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CenterCastleWall" x="320" y="2304" name="inst_BD174B49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -807,9 +807,10 @@
     <instance objName="obj_grasstuft1" x="1792" y="192" name="inst_3A2A0229" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft1" x="1600" y="256" name="inst_21083B57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft1" x="1728" y="256" name="inst_37051DDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_controller" x="128" y="192" name="inst_7432A93B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="1600" y="2624" name="inst_61BC74E5" locked="0" code="target_x = 480;&#xA;target_y = 64;&#xA;&#xA;target_r = rm_TransitionForest;&#xA;" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="1536" y="0" name="inst_530B823B" locked="0" code="target_x = 64;&#xA;target_y = 1920;&#xA;&#xA;target_r = rm_Maze;&#xA;" scaleX="8" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hero" x="1664" y="320" name="inst_79A9F64F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_controller" x="1408" y="1152" name="inst_F0F637F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
