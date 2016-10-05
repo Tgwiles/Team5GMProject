@@ -57,6 +57,7 @@
     <sprite>sprites\spr_cabbagecart_spilled</sprite>
     <sprite>sprites\spr_cabbagecart_stacked</sprite>
     <sprite>sprites\spr_carpentersign</sprite>
+    <sprite>sprites\sprite47</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
