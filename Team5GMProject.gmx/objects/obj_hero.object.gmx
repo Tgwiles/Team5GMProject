@@ -811,10 +811,18 @@ else if (dialogueChoice==4) {
             <kind>1</kind>
             <string>draw_self();
 draw_set_color(c_black);
+draw_set_alpha(.8);
+//temporary working for now, though it should scale to the view size
+//now its normal in the training ground and huge in the forest
 if(hasBow==true) {
-    draw_circle(view_xview + view_wview - 50, view_yview + 50, 15, false);
-    draw_sprite_ext(spr_Sword, image_index, view_xview + view_wview - 50, view_yview + 50, .5, .5, 0, -1, 1);
+    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview/16, view_wview*13/300, false);
+    draw_sprite_ext(spr_Sword, image_index, view_xview + view_wview*15/16, view_yview + view_wview/16, view_wview/1500, view_wview/1500, 0, -1, 1);
 }
+if(hasBow==true) {
+    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*2/16, view_wview*13/300, false);
+    draw_sprite_ext(spr_Sword, image_index, view_xview + view_wview*15/16, view_yview + view_wview*2/16, view_wview/1500, view_wview/1500, 0, -1, 1);
+}
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>

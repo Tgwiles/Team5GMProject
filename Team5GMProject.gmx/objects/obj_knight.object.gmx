@@ -212,7 +212,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             dialogueChoice = -1;
             break;
         case 4:
-            text = "You always want to keep your eye on your target.#Focus then when the time is right breath in when you pull the string on your bow and exhale when you release.";
+            text = "You always want to keep your eye on your target. Focus then when the time is right#breath in when you pull the string on your bow and exhale when you release.";
             choice1 = "";
             choice2 = "";
             choice3 = "";
