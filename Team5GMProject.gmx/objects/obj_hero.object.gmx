@@ -168,7 +168,6 @@ image_speed = 0.25
           <argument>
             <kind>1</kind>
             <string>vspeed-=6;
-
 </string>
           </argument>
         </arguments>
@@ -347,7 +346,6 @@ else if (dialogueChoice==4) {
           <argument>
             <kind>1</kind>
             <string>vspeed+=6;
-
 </string>
           </argument>
         </arguments>
@@ -526,7 +524,6 @@ else if (dialogueChoice==2) {
           <argument>
             <kind>1</kind>
             <string>hspeed+=6;
-
 </string>
           </argument>
         </arguments>
@@ -705,7 +702,6 @@ else if (dialogueChoice==3) {
           <argument>
             <kind>1</kind>
             <string>hspeed-=6;
-
 </string>
           </argument>
         </arguments>
@@ -794,6 +790,34 @@ else if (dialogueChoice==4) {
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+draw_set_color(c_black);
+if(hasBow==true) {
+    draw_circle(view_xview + view_wview - 50, view_yview + 50, 15, false);
+    draw_sprite_ext(spr_Sword, image_index, view_xview + view_wview - 50, view_yview + 50, .5, .5, 0, -1, 1);
+}
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>
