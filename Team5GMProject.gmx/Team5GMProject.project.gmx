@@ -11,6 +11,7 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_hero_front</sprite>
+    <sprite>sprites\spr_hero_idle</sprite>
     <sprite>sprites\spr_hero_back</sprite>
     <sprite>sprites\spr_hero_left</sprite>
     <sprite>sprites\spr_hero_right</sprite>
@@ -57,6 +58,7 @@
     <sprite>sprites\spr_cabbagecart_spilled</sprite>
     <sprite>sprites\spr_cabbagecart_stacked</sprite>
     <sprite>sprites\spr_carpentersign</sprite>
+    <sprite>sprites\spr_MazeHole</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>

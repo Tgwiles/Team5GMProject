@@ -6,7 +6,7 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
@@ -173,6 +173,8 @@
     <instance objName="obj_CenterCastleWall" x="192" y="640" name="inst_C36A61D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_carpenter" x="640" y="384" name="inst_B728F9DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_WoodPile" x="352" y="64" name="inst_58058FE3" locked="0" code="" scaleX="1.88235294818878" scaleY="1.1360946893692" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warpRoom" x="352" y="736" name="inst_4335E246" locked="0" code="target_x = 512;&#xA;target_y = 64;&#xA;&#xA;target_r = rm_castle_4;&#xA;" scaleX="10" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warpRoom" x="352" y="0" name="inst_99E9D497" locked="0" code="target_x = 480;&#xA;target_y = 672;&#xA;&#xA;target_r = rm_castle_6;&#xA;" scaleX="10" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
