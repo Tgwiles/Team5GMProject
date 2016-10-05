@@ -818,9 +818,9 @@ if(hasBow==true) {
     draw_circle(view_xview + view_wview*15/16, view_yview + view_wview/16, view_wview*13/300, false);
     draw_sprite_ext(spr_Sword, image_index, view_xview + view_wview*15/16, view_yview + view_wview/16, view_wview/1500, view_wview/1500, 0, -1, 1);
 }
-if(hasBow==true) {
-    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*2/16, view_wview*13/300, false);
-    draw_sprite_ext(spr_Sword, image_index, view_xview + view_wview*15/16, view_yview + view_wview*2/16, view_wview/1500, view_wview/1500, 0, -1, 1);
+if(hasAxe==true) {
+    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*2.5/16, view_wview*13/300, false);
+    draw_sprite_ext(spr_Axe, image_index, view_xview + view_wview*15/16, view_yview + view_wview*2.5/16, view_wview/750, view_wview/750, 0, -1, 1);
 }
 draw_set_alpha(1);
 </string>
