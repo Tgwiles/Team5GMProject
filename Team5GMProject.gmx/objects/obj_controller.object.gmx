@@ -68,6 +68,33 @@ hasEgg = false;
 globalvar branchesCut;
 branchesCut = false;
 
+//castle progress
+globalvar talkCatLady;
+talkCatLady = false;
+globalvar finishCatLady;
+finishCatLady = false;
+globalvar talkCabbageMerchant;
+talkCabbage = false;
+globalvar finishCabbageMerchant;
+finishCabbage = false;
+globalvar finishShadyGuy;
+finishShadyGuy = false;
+globalvar talkGardener;
+talkGardener = false;
+globalvar finishGardener;
+finishGardener = false;
+globalvar finishTreasure;
+finishTreasure = false;
+globalvar talkCarpenter;
+talkCarpenter = false;
+globalvar finishCarpenter;
+finishCarpenter = false;
+globalvar talkMathGuy;
+talkMathGuy = false;
+globalvar finishMathGuy;
+finishMathGuy = false;
+
+
 globalvar conversation;
 conversation=false;
 globalvar choice;
