@@ -3,11 +3,319 @@
   <spriteName>spr_fluffy_owner</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-5</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw=false;
+text="I like trees";
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+if (draw==true) {
+    draw_set_color(c_black);
+    //draw the character's statement/question
+    draw_rectangle(view_xview + 8, view_yview + 790,view_xview + 1524, view_yview + 890, false);
+    
+    //draw the possible responses
+    if(choice1 != "") {
+        draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
+    }
+    if(choice2 != "") {
+        draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
+    }
+    if(choice3 != "") {
+        draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
+    }
+    if(choice4 != "") {
+        draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+    }
+    
+    //highlight the selected response
+    draw_set_color(c_gray);
+    switch (dialogueChoice) {
+        case 1: draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
+                break;
+        case 2: draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
+                break;
+        case 3: draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
+                break;
+        case 4: draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+                break;
+    }
+    draw_set_color(c_white);
+    draw_set_valign(fa_center);
+    draw_set_halign(fa_center);
+
+    draw_set_font(fnt);
+    draw_text(view_xview + 766, view_yview + 840, text);
+    draw_text(view_xview + 384, view_yview + 950, choice1);
+    draw_text(view_xview + 1150, view_yview + 950, choice2);
+    draw_text(view_xview + 384, view_yview + 1060, choice3);
+    draw_text(view_xview + 1150, view_yview + 1060, choice4);
+    draw_set_color(c_black);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(conversation==false &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    conversation=true;
+    draw=true;
+}
+
+if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    repeat (2)
+    switch (choice) {
+        case 0:
+            if (dialogueChoice==-1) {
+                text = "Three years I’ve worked for his majesty and have never seen a squire as skinny as you.";
+                choice1 = "I have an interest in learning archery.";
+                choice2 = "My muscles are still bigger than yours.";
+                choice3 = "What do you think of the King?";
+                choice4 = "I have to go.";
+            }
+            else if (dialogueChoice==1) {choice = 2;}
+            else if (dialogueChoice==2) {choice = 7;}
+            else if (dialogueChoice==3) {choice = 8;}
+            else if (dialogueChoice==4) {choice = 11;}
+            dialogueChoice = -1;
+            break;
+        case 1:
+            if (dialogueChoice==-1) {
+                text = "Is there anything else you want to ask?";
+                choice1 = "I have an interest in learning archery.";
+                choice2 = "My muscles are still bigger than yours.";
+                choice3 = "What do you think of the King?";
+                choice4 = "I have to go.";
+            }
+            else if (dialogueChoice==1) {choice = 3;}
+            else if (dialogueChoice==2) {choice = 7;}
+            else if (dialogueChoice==3) {choice = 8;}
+            else if (dialogueChoice==4) {choice = 11;}
+            dialogueChoice = -1;
+            break;
+        case 2:
+            if (dialogueChoice==-1) {
+                text = "Ahh, finally coming to your senses then, what do you need help with?";
+                choice1 = "What tips can you give me?";
+                choice2 = "I’ve never even seen you hit a target before.";
+                choice3 = "I want to practice.#Can you lend me a bow and some arrows?";
+                choice4 = "Never mind.";
+            }
+            else if (dialogueChoice==1) {choice = 4;}
+            else if (dialogueChoice==2) {choice = 5;}
+            else if (dialogueChoice==3) {choice = 6;}
+            else if (dialogueChoice==4) {choice = 1;}
+            dialogueChoice = -1;
+            break;
+        case 3:
+            if (dialogueChoice==-1) {
+                text = "What else do you need help with?";
+                choice1 = "What tips can you give me?";
+                choice2 = "I’ve never even seen you hit a target before.";
+                choice3 = "I want to practice.#Can you lend me a bow and some arrows?";
+                choice4 = "Never mind.";
+            }
+            else if (dialogueChoice==1) {choice = 4;}
+            else if (dialogueChoice==2) {choice = 5;}
+            else if (dialogueChoice==3) {choice = 6;}
+            else if (dialogueChoice==4) {choice = 1;}
+            dialogueChoice = -1;
+            break;
+        case 4:
+            text = "You always want to keep your eye on your target.#Focus then when the time is right breath in when you pull the string on your bow and exhale when you release.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 12;
+            dialogueChoice = -1;
+            break;
+        case 5:
+            text = "Blasphemy, my arrow flies true every time.#I don’t need your negativity messing up my aim. Away with you.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 15;
+            dialogueChoice = -1;
+            break;
+        case 6:
+            if (hasBow) {
+                text = "I already gave you a bow!";
+            }
+            else {
+                text = "Of course, take this set to keep. Remember it takes lot of time#to get a good as me, don’t forget to spend a lot of time practicing.";
+                hasBow = true;
+            }
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 13;
+            dialogueChoice = -1;
+            break;
+        case 7:
+            text = "You wish, I have a draw strength like no other.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 14;
+            dialogueChoice = -1;
+            break;
+        case 8:
+            text = "Great man the King is, not as great as me of course;#he does his best to rule the kingdom especially with what’s going on with-";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 9;
+            dialogueChoice = -1;
+            break;
+        case 9:
+            //just a thing used to hop to the last step without skipping anything
+            choice = 10;
+            dialogueChoice = -1;
+            break;
+        case 10:
+            text = "Forget I said that, in fact forget I said anything.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 15;
+            dialogueChoice = -1;
+            break;
+        case 11:
+            text = "Best of luck with your training, may your strength one day come close to mine.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 15;
+            dialogueChoice = -1;
+            break;
+        case 12:
+            //just a thing used to hop to the last step without skipping anything
+            choice = 3;
+            dialogueChoice = -1;
+            break;
+        case 13:
+            //just a thing used to hop to the last step without skipping anything
+            choice = 3;
+            dialogueChoice = -1;
+            break;
+        case 14:
+            //just a thing used to hop to the last step without skipping anything
+            choice = 1;
+            dialogueChoice = -1;
+            break;
+        case 15:
+            choice = 99;
+            dialogueChoice = -1;
+            break;
+        case 99: //case for ending the conversation
+            draw=false;
+            conversation=false;
+            dialogueChoice=-1;
+            choice=0;
+            break;
+                
+        default: text = "something went wrong";
+            break;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (conversation==true and draw == true) 
+{
+conversation = false;
+draw = false;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

@@ -31,6 +31,8 @@ choice1="A";
 choice2="S";
 choice3="D";
 choice4="W";
+
+image_speed = 0.03;
 </string>
           </argument>
         </arguments>
@@ -83,32 +85,32 @@ choice4="W";
 if (draw==true) {
     draw_set_color(c_black);
     //draw the character's statement/question
-    draw_rectangle(view_xview + 8, view_yview + 790,view_xview + 1524, view_yview + 890, false);
+    draw_rectangle(view_xview + 8, view_yview + view_hview - 360, view_xview + view_wview - 8, view_yview + view_hview - 260, false);
     
     //draw the possible responses
     if(choice1 != "") {
-        draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
+        draw_rectangle(view_xview + 8, view_yview + view_hview - 250, view_xview + view_wview/2 - 4, view_yview + view_hview - 150, false);
     }
     if(choice2 != "") {
-        draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
+        draw_rectangle(view_xview + view_wview/2 + 4, view_yview + view_hview - 250, view_xview + view_wview - 8, view_yview + view_hview - 150, false);
     }
     if(choice3 != "") {
-        draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
+        draw_rectangle(view_xview + 8, view_yview + view_hview - 140, view_xview + view_wview/2 - 4, view_yview + view_hview - 40, false);
     }
     if(choice4 != "") {
-        draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+        draw_rectangle(view_xview + view_wview/2 + 4, view_yview + view_hview - 140, view_xview + view_wview - 8, view_yview + view_hview - 40, false);
     }
     
     //highlight the selected response
     draw_set_color(c_gray);
     switch (dialogueChoice) {
-        case 1: draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
+        case 1: draw_rectangle(view_xview + 8, view_yview + view_hview - 250, view_xview + view_wview/2 - 4, view_yview + view_hview - 150, false);
                 break;
-        case 2: draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
+        case 2: draw_rectangle(view_xview + view_wview/2 + 4, view_yview + view_hview - 250, view_xview + view_wview - 8, view_yview + view_hview - 150, false);
                 break;
-        case 3: draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
+        case 3: draw_rectangle(view_xview + 8, view_yview + view_hview - 140, view_xview + view_wview/2 - 4, view_yview + view_hview - 40, false);
                 break;
-        case 4: draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+        case 4: draw_rectangle(view_xview + view_wview/2 + 4, view_yview + view_hview - 140, view_xview + view_wview - 8, view_yview + view_hview - 40, false);
                 break;
     }
     draw_set_color(c_white);
@@ -116,11 +118,11 @@ if (draw==true) {
     draw_set_halign(fa_center);
 
     draw_set_font(fnt);
-    draw_text(view_xview + 766, view_yview + 840, text);
-    draw_text(view_xview + 384, view_yview + 950, choice1);
-    draw_text(view_xview + 1150, view_yview + 950, choice2);
-    draw_text(view_xview + 384, view_yview + 1060, choice3);
-    draw_text(view_xview + 1150, view_yview + 1060, choice4);
+    draw_text(view_xview + view_wview/2, view_yview + view_hview - 310, text);
+    draw_text(view_xview + view_wview/4, view_yview + view_hview - 200, choice1);
+    draw_text(view_xview + view_wview*3/4, view_yview + view_hview - 200, choice2);
+    draw_text(view_xview + view_wview/4, view_yview + view_hview - 90, choice3);
+    draw_text(view_xview + view_wview*3/4, view_yview + view_hview - 90, choice4);
     draw_set_color(c_black);
 }
 </string>
@@ -210,7 +212,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             dialogueChoice = -1;
             break;
         case 4:
-            text = "You always want to keep your eye on your target.#Focus then when the time is right breath in when you pull the string on your bow and exhale when you release.";
+            text = "You always want to keep your eye on your target. Focus then when the time is right#breath in when you pull the string on your bow and exhale when you release.";
             choice1 = "";
             choice2 = "";
             choice3 = "";
