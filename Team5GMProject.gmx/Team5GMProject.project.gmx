@@ -58,11 +58,7 @@
     <sprite>sprites\spr_cabbagecart_spilled</sprite>
     <sprite>sprites\spr_cabbagecart_stacked</sprite>
     <sprite>sprites\spr_carpentersign</sprite>
-<<<<<<< HEAD
-    <sprite>sprites\sprite47</sprite>
-=======
     <sprite>sprites\spr_MazeHole</sprite>
->>>>>>> effc76273d752d470cf605d7b325bab5ce91ba92
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
