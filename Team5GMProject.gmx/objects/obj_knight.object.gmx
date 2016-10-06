@@ -83,34 +83,35 @@ image_speed = 0.03;
             <kind>1</kind>
             <string>draw_self();
 if (draw==true) {
+    //making all the text boxes relative to view width, so its the same size in all rooms
     draw_set_color(c_black);
     //draw the character's statement/question
-    draw_rectangle(view_xview + 8, view_yview + view_hview - 360, view_xview + view_wview - 8, view_yview + view_hview - 260, false);
+    draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*360/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*260/1500, false);
     
     //draw the possible responses
     if(choice1 != "") {
-        draw_rectangle(view_xview + 8, view_yview + view_hview - 250, view_xview + view_wview/2 - 4, view_yview + view_hview - 150, false);
+        draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*150/1500, false);
     }
     if(choice2 != "") {
-        draw_rectangle(view_xview + view_wview/2 + 4, view_yview + view_hview - 250, view_xview + view_wview - 8, view_yview + view_hview - 150, false);
+        draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*150/1500, false);
     }
     if(choice3 != "") {
-        draw_rectangle(view_xview + 8, view_yview + view_hview - 140, view_xview + view_wview/2 - 4, view_yview + view_hview - 40, false);
+        draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*40/1500, false);
     }
     if(choice4 != "") {
-        draw_rectangle(view_xview + view_wview/2 + 4, view_yview + view_hview - 140, view_xview + view_wview - 8, view_yview + view_hview - 40, false);
+        draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*40/1500, false);
     }
     
     //highlight the selected response
     draw_set_color(c_gray);
     switch (dialogueChoice) {
-        case 1: draw_rectangle(view_xview + 8, view_yview + view_hview - 250, view_xview + view_wview/2 - 4, view_yview + view_hview - 150, false);
+        case 1: draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*150/1500, false);
                 break;
-        case 2: draw_rectangle(view_xview + view_wview/2 + 4, view_yview + view_hview - 250, view_xview + view_wview - 8, view_yview + view_hview - 150, false);
+        case 2: draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*150/1500, false);
                 break;
-        case 3: draw_rectangle(view_xview + 8, view_yview + view_hview - 140, view_xview + view_wview/2 - 4, view_yview + view_hview - 40, false);
+        case 3: draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*40/1500, false);
                 break;
-        case 4: draw_rectangle(view_xview + view_wview/2 + 4, view_yview + view_hview - 140, view_xview + view_wview - 8, view_yview + view_hview - 40, false);
+        case 4: draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*40/1500, false);
                 break;
     }
     draw_set_color(c_white);
@@ -118,11 +119,11 @@ if (draw==true) {
     draw_set_halign(fa_center);
 
     draw_set_font(fnt);
-    draw_text(view_xview + view_wview/2, view_yview + view_hview - 310, text);
-    draw_text(view_xview + view_wview/4, view_yview + view_hview - 200, choice1);
-    draw_text(view_xview + view_wview*3/4, view_yview + view_hview - 200, choice2);
-    draw_text(view_xview + view_wview/4, view_yview + view_hview - 90, choice3);
-    draw_text(view_xview + view_wview*3/4, view_yview + view_hview - 90, choice4);
+    draw_text(view_xview + view_wview/2, view_yview + view_hview - view_wview*310/1500, text);
+    draw_text(view_xview + view_wview/4, view_yview + view_hview - view_wview*200/1500, choice1);
+    draw_text(view_xview + view_wview*3/4, view_yview + view_hview - view_wview*200/1500, choice2);
+    draw_text(view_xview + view_wview/4, view_yview + view_hview - view_wview*90/1500, choice3);
+    draw_text(view_xview + view_wview*3/4, view_yview + view_hview - view_wview*90/1500, choice4);
     draw_set_color(c_black);
 }
 </string>

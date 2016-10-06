@@ -32,6 +32,32 @@ text="I like trees";
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_hero">
+      <action>
+        <libid>1</libid>
+        <id>115</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_bounce</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -51,46 +77,47 @@ text="I like trees";
             <kind>1</kind>
             <string>draw_self();
 if (draw==true) {
+    //making all the text boxes relative to view width, so its the same size in all rooms
     draw_set_color(c_black);
     //draw the character's statement/question
-    draw_rectangle(view_xview + 8, view_yview + 790,view_xview + 1524, view_yview + 890, false);
+    draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*360/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*260/1500, false);
     
     //draw the possible responses
     if(choice1 != "") {
-        draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
+        draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*150/1500, false);
     }
     if(choice2 != "") {
-        draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
+        draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*150/1500, false);
     }
     if(choice3 != "") {
-        draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
+        draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*40/1500, false);
     }
     if(choice4 != "") {
-        draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+        draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*40/1500, false);
     }
     
     //highlight the selected response
     draw_set_color(c_gray);
     switch (dialogueChoice) {
-        case 1: draw_rectangle(view_xview + 8, view_yview + 900,view_xview + 760, view_yview + 1000, false);
+        case 1: draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*150/1500, false);
                 break;
-        case 2: draw_rectangle(view_xview + 776, view_yview + 900,view_xview + 1524, view_yview + 1000, false);
+        case 2: draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*150/1500, false);
                 break;
-        case 3: draw_rectangle(view_xview + 8, view_yview + 1010,view_xview + 760, view_yview + 1110, false);
+        case 3: draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*40/1500, false);
                 break;
-        case 4: draw_rectangle(view_xview + 776, view_yview + 1010,view_xview + 1524, view_yview + 1110, false);
+        case 4: draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*40/1500, false);
                 break;
     }
     draw_set_color(c_white);
     draw_set_valign(fa_center);
     draw_set_halign(fa_center);
 
-    draw_set_font(fnt);
-    draw_text(view_xview + 766, view_yview + 840, text);
-    draw_text(view_xview + 384, view_yview + 950, choice1);
-    draw_text(view_xview + 1150, view_yview + 950, choice2);
-    draw_text(view_xview + 384, view_yview + 1060, choice3);
-    draw_text(view_xview + 1150, view_yview + 1060, choice4);
+    draw_set_font(fnt_small);
+    draw_text(view_xview + view_wview/2, view_yview + view_hview - view_wview*310/1500, text);
+    draw_text(view_xview + view_wview/4, view_yview + view_hview - view_wview*200/1500, choice1);
+    draw_text(view_xview + view_wview*3/4, view_yview + view_hview - view_wview*200/1500, choice2);
+    draw_text(view_xview + view_wview/4, view_yview + view_hview - view_wview*90/1500, choice3);
+    draw_text(view_xview + view_wview*3/4, view_yview + view_hview - view_wview*90/1500, choice4);
     draw_set_color(c_black);
 }
 </string>
@@ -125,151 +152,47 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     switch (choice) {
         case 0:
             if (dialogueChoice==-1) {
-                text = "Three years I’ve worked for his majesty and have never seen a squire as skinny as you.";
-                choice1 = "I have an interest in learning archery.";
-                choice2 = "My muscles are still bigger than yours.";
-                choice3 = "What do you think of the King?";
-                choice4 = "I have to go.";
+                text = "He’s missing! I can’t, I can’t find him anywhere!";
+                choice1 = "What, did your husband leave you?";
+                choice2 = "Who’s missing?";
+                choice3 = "";
+                choice4 = "";
             }
-            else if (dialogueChoice==1) {choice = 2;}
-            else if (dialogueChoice==2) {choice = 7;}
-            else if (dialogueChoice==3) {choice = 8;}
-            else if (dialogueChoice==4) {choice = 11;}
+            else if (dialogueChoice==1) {choice = 1;}
+            else if (dialogueChoice==2) {choice = 2;}
             dialogueChoice = -1;
             break;
         case 1:
-            if (dialogueChoice==-1) {
-                text = "Is there anything else you want to ask?";
-                choice1 = "I have an interest in learning archery.";
-                choice2 = "My muscles are still bigger than yours.";
-                choice3 = "What do you think of the King?";
-                choice4 = "I have to go.";
-            }
-            else if (dialogueChoice==1) {choice = 3;}
-            else if (dialogueChoice==2) {choice = 7;}
-            else if (dialogueChoice==3) {choice = 8;}
-            else if (dialogueChoice==4) {choice = 11;}
+            text = "I don’t need help from an insensitive oaf like you.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
             dialogueChoice = -1;
             break;
         case 2:
             if (dialogueChoice==-1) {
-                text = "Ahh, finally coming to your senses then, what do you need help with?";
-                choice1 = "What tips can you give me?";
-                choice2 = "I’ve never even seen you hit a target before.";
-                choice3 = "I want to practice.#Can you lend me a bow and some arrows?";
-                choice4 = "Never mind.";
+                text = "My poor baby Fluffy, he just ran off a little while ago and I can seem to find him anywhere.#I’m so afraid of the other more vicious animals could be after him.";
+                choice1 = "Is there any way I could help?";
+                choice2 = "What does he look like?";
+                choice3 = "Good luck finding him.";
+                choice4 = "";
             }
-            else if (dialogueChoice==1) {choice = 4;}
+            else if (dialogueChoice==1) {choice = 3;}
             else if (dialogueChoice==2) {choice = 5;}
-            else if (dialogueChoice==3) {choice = 6;}
-            else if (dialogueChoice==4) {choice = 1;}
             dialogueChoice = -1;
             break;
         case 3:
-            if (dialogueChoice==-1) {
-                text = "What else do you need help with?";
-                choice1 = "What tips can you give me?";
-                choice2 = "I’ve never even seen you hit a target before.";
-                choice3 = "I want to practice.#Can you lend me a bow and some arrows?";
-                choice4 = "Never mind.";
-            }
-            else if (dialogueChoice==1) {choice = 4;}
-            else if (dialogueChoice==2) {choice = 5;}
-            else if (dialogueChoice==3) {choice = 6;}
-            else if (dialogueChoice==4) {choice = 1;}
-            dialogueChoice = -1;
+            choice = 4;
             break;
         case 4:
-            text = "You always want to keep your eye on your target.#Focus then when the time is right breath in when you pull the string on your bow and exhale when you release.";
+            text = "Oh please, I would be so grateful, here this is his favorite treat when you get close enough with this he will follow you anywhere.";
             choice1 = "";
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 12;
-            dialogueChoice = -1;
-            break;
-        case 5:
-            text = "Blasphemy, my arrow flies true every time.#I don’t need your negativity messing up my aim. Away with you.";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 15;
-            dialogueChoice = -1;
-            break;
-        case 6:
-            if (hasBow) {
-                text = "I already gave you a bow!";
-            }
-            else {
-                text = "Of course, take this set to keep. Remember it takes lot of time#to get a good as me, don’t forget to spend a lot of time practicing.";
-                hasBow = true;
-            }
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 13;
-            dialogueChoice = -1;
-            break;
-        case 7:
-            text = "You wish, I have a draw strength like no other.";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 14;
-            dialogueChoice = -1;
-            break;
-        case 8:
-            text = "Great man the King is, not as great as me of course;#he does his best to rule the kingdom especially with what’s going on with-";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 9;
-            dialogueChoice = -1;
-            break;
-        case 9:
-            //just a thing used to hop to the last step without skipping anything
-            choice = 10;
-            dialogueChoice = -1;
-            break;
-        case 10:
-            text = "Forget I said that, in fact forget I said anything.";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 15;
-            dialogueChoice = -1;
-            break;
-        case 11:
-            text = "Best of luck with your training, may your strength one day come close to mine.";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 15;
-            dialogueChoice = -1;
-            break;
-        case 12:
-            //just a thing used to hop to the last step without skipping anything
-            choice = 3;
-            dialogueChoice = -1;
-            break;
-        case 13:
-            //just a thing used to hop to the last step without skipping anything
-            choice = 3;
-            dialogueChoice = -1;
-            break;
-        case 14:
-            //just a thing used to hop to the last step without skipping anything
-            choice = 1;
-            dialogueChoice = -1;
-            break;
-        case 15:
-            choice = 99;
+            choice = 2;
             dialogueChoice = -1;
             break;
         case 99: //case for ending the conversation
