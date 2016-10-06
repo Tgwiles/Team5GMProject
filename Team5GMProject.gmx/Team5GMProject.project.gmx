@@ -8,6 +8,12 @@
     <sound>sound\snd_TrainingGround</sound>
     <sound>sound\snd_Castle</sound>
     <sound>sound\snd_Forest</sound>
+    <sound>sound\snd_WaterDripping</sound>
+    <sound>sound\snd_FootstepsDirst</sound>
+    <sound>sound\snd_FootstepsStone</sound>
+    <sound>sound\snd_FootstepsForest</sound>
+    <sound>sound\snd_SharpeningAxe</sound>
+    <sound>sound\smd_PickUpItem</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_hero_front</sprite>
@@ -60,6 +66,7 @@
     <sprite>sprites\spr_carpentersign</sprite>
     <sprite>sprites\spr_MazeHole</sprite>
     <sprite>sprites\sprite47</sprite>
+    <sprite>sprites\spr_Fluffy_sTreat</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
