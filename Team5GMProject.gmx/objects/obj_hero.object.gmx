@@ -812,15 +812,18 @@ else if (dialogueChoice==4) {
             <string>draw_self();
 draw_set_color(c_black);
 draw_set_alpha(.8);
-//temporary working for now, though it should scale to the view size
-//now its normal in the training ground and huge in the forest
+//draws the hero's inventory
+//to add anything, copy/paste the hasBow lines, changing the appropriate sprite and global variable
+loc=1;
 if(hasBow==true) {
-    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview/16, view_wview*13/300, false);
-    draw_sprite_ext(spr_Sword, image_index, view_xview + view_wview*15/16, view_yview + view_wview/16, view_wview/1500, view_wview/1500, 0, -1, 1);
+    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
+    draw_sprite_ext(spr_Sword, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/1500, view_wview/1500, 0, -1, 1);
+    loc += 1.5;
 }
 if(hasAxe==true) {
-    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*2.5/16, view_wview*13/300, false);
-    draw_sprite_ext(spr_Axe, image_index, view_xview + view_wview*15/16, view_yview + view_wview*2.5/16, view_wview/750, view_wview/750, 0, -1, 1);
+    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
+    draw_sprite_ext(spr_Axe, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/750, view_wview/750, 0, -1, 1);
+    loc += 1.5;
 }
 draw_set_alpha(1);
 </string>
