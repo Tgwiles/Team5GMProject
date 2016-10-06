@@ -173,7 +173,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             break;
         case 2:
             if (dialogueChoice==-1) {
-                text = "My poor baby Fluffy, he just ran off a little while ago and I can seem to find him anywhere.#I’m so afraid of the other more vicious animals could be after him.";
+                text = "My poor baby Fluffy, he just ran off a little while ago and I can't seem to#find him anywhere.I’m so afraid of the other more vicious animals could be after him.";
                 choice1 = "Is there any way I could help?";
                 choice2 = "What does he look like?";
                 choice3 = "Good luck finding him.";
@@ -181,20 +181,45 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             }
             else if (dialogueChoice==1) {choice = 3;}
             else if (dialogueChoice==2) {choice = 5;}
+            else if (dialogueChoice==3) {choice = 7;}
             dialogueChoice = -1;
             break;
         case 3:
-            choice = 4;
-            break;
-        case 4:
-            text = "Oh please, I would be so grateful, here this is his favorite treat when you get close enough with this he will follow you anywhere.";
+            text = "Oh please, I would be so grateful. Here, this is his favorite treat.#When you get close enough with this he will follow you anywhere.";
             choice1 = "";
             choice2 = "";
             choice3 = "";
             choice4 = "";
+            choice = 4;
+            dialogueChoice = -1;
+            break;
+        case 4:
             choice = 2;
             dialogueChoice = -1;
             break;
+        case 5:
+            if (dialogueChoice==-1)
+            text = "He is the most adorable thing you have ever seen, a real sweetheart.#If you get too close he may lick you!";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 6;
+            dialogueChoice = -1;
+            break;
+        case 6:
+            choice = 2;
+            dialogueChoice = -1;
+            break;
+        case 7:
+            text = "I’ll try but I always get so lost in these woods.#I fear I will never see him again.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
+            dialogueChoice = -1;
+            break;        
         case 99: //case for ending the conversation
             draw=false;
             conversation=false;
@@ -230,6 +255,8 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             <kind>1</kind>
             <string>if (conversation==true and draw == true) 
 {
+choice = 0;
+dialogueChoice = -1;
 conversation = false;
 draw = false;
 }
