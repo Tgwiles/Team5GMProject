@@ -124,7 +124,27 @@
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
   </timelines>
-  <rooms name="rooms"/>
+  <rooms name="rooms">
+    <room>rooms\rm_main_hub</room>
+    <room>rooms\rm_TransitionForest</room>
+    <room>rooms\rm_mountain1</room>
+    <room>rooms\rm_forest_3B</room>
+    <room>rooms\rm_forest_3A</room>
+    <room>rooms\rm_forest_3C</room>
+    <room>rooms\rm_forest_2A</room>
+    <room>rooms\rm_forest_2B</room>
+    <room>rooms\rm_forest_2C</room>
+    <room>rooms\rm_forest_1A</room>
+    <room>rooms\rm_forest_1B</room>
+    <room>rooms\rm_forest_1C</room>
+    <room>rooms\rm_Maze</room>
+    <room>rooms\rm_castle_2</room>
+    <room>rooms\rm_castle_1</room>
+    <room>rooms\rm_castle_3</room>
+    <room>rooms\rm_castle_4</room>
+    <room>rooms\rm_castle_5</room>
+    <room>rooms\rm_castle_6</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
