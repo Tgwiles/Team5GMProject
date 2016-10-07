@@ -73,11 +73,7 @@
     <sprite>sprites\spr_Hole</sprite>
     <sprite>sprites\spr_cat</sprite>
     <sprite>sprites\spr_catladyhappy</sprite>
-<<<<<<< HEAD
     <sprite>sprites\spr_x</sprite>
-=======
-    <sprite>sprites\spr_Bow</sprite>
->>>>>>> origin/master
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
