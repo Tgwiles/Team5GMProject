@@ -90,7 +90,7 @@
     <instance objName="obj_TreeFar" x="224" y="160" name="inst_EF101BAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="96" y="160" name="inst_E8DAFF62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="-32" y="160" name="inst_AE173698" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeFar" x="-32" y="320" name="inst_07960020" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="-32" y="320" name="inst_07960020" locked="0" code="depth = 14&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CentrDarkDirt" x="64" y="352" name="inst_B11C6515" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CentrDarkDirt" x="32" y="384" name="inst_C01F97B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CentrDarkDirt" x="32" y="352" name="inst_1185EE6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
