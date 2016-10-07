@@ -44,6 +44,8 @@ globalvar sharpAxe;
 sharpAxe = false;
 globalvar hasTreat;
 hasTreat = false;
+globalvar gotFluffy;
+gotFluffy = false;
 globalvar hasFruit;
 hasFruit = false;
 
@@ -62,7 +64,6 @@ hasSword = false;
 //cave items
 globalvar hasEgg;
 hasEgg = false;
-
 
 //quest progress
 globalvar branchesCut;

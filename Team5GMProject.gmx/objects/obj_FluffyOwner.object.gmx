@@ -26,7 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>draw=false;
-text="I like trees";
+if(gotFluffy==true) {
+    instance_create(x+30, y+25, obj_BlockingRock);
+}
 </string>
           </argument>
         </arguments>
@@ -120,6 +122,9 @@ if (draw==true) {
     draw_text(view_xview + view_wview*3/4, view_yview + view_hview - view_wview*90/1500, choice4);
     draw_set_color(c_black);
 }
+if(gotFluffy==true) {
+    draw_sprite_ext(spr_Fluffy, 0, x+175, y-50, -1, 1, 0, -1, 1);
+}
 </string>
           </argument>
         </arguments>
@@ -147,7 +152,29 @@ if (draw==true) {
     draw=true;
 }
 
-if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+if(gotFluffy &amp;&amp; conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    switch (choice) {
+        case 0:
+            text = "Thank you for finding my baby!";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
+            break;
+        case 99: //case for ending the conversation
+            draw=false;
+            conversation=false;
+            dialogueChoice=-1;
+            choice=0;
+            break;
+                
+        default: text = "something went wrong";
+            break;
+    }
+}
+
+else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     repeat (2)
     switch (choice) {
         case 0:
@@ -190,6 +217,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             choice2 = "";
             choice3 = "";
             choice4 = "";
+            hasTreat = true;
             choice = 4;
             dialogueChoice = -1;
             break;
@@ -219,7 +247,10 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             choice4 = "";
             choice = 99;
             dialogueChoice = -1;
-            break;        
+            break;
+        case 8:
+            choice = 99;
+            break;
         case 99: //case for ending the conversation
             draw=false;
             conversation=false;

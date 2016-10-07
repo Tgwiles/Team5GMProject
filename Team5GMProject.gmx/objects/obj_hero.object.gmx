@@ -825,6 +825,11 @@ if(hasAxe==true) {
     draw_sprite_ext(spr_Axe, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/750, view_wview/750, 0, -1, 1);
     loc += 1.5;
 }
+if(hasTreat==true) {
+    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
+    draw_sprite_ext(spr_FluffysTreat, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/1900, view_wview/1900, -45, -1, 1);
+    loc += 1.5;
+}
 draw_set_alpha(1);
 </string>
           </argument>

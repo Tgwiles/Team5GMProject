@@ -97,10 +97,10 @@
             <kind>1</kind>
             <string>draw=false;
 text="";
-choice1="A";
-choice2="S";
-choice3="D";
-choice4="W";
+choice1="";
+choice2="";
+choice3="";
+choice4="";
 </string>
           </argument>
         </arguments>
