@@ -70,6 +70,8 @@
     <sprite>sprites\spr_GoldenFruit</sprite>
     <sprite>sprites\spr_Explosion2</sprite>
     <sprite>sprites\spr_Hole</sprite>
+    <sprite>sprites\spr_cat</sprite>
+    <sprite>sprites\spr_catladyhappy</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -132,6 +134,7 @@
     <object>objects\obj_WoodPile</object>
     <object>objects\obj_Explosion2</object>
     <object>objects\obj_Hole</object>
+    <object>objects\obj_Cat</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
