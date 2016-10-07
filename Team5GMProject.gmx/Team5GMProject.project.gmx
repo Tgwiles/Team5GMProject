@@ -67,6 +67,8 @@
     <sprite>sprites\spr_MazeHole</sprite>
     <sprite>sprites\sprite47</sprite>
     <sprite>sprites\spr_Fluffy_sTreat</sprite>
+    <sprite>sprites\spr_cat</sprite>
+    <sprite>sprites\spr_catladyhappy</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -127,6 +129,7 @@
     <object>objects\obj_carpenter</object>
     <object>objects\obj_CabbageCart</object>
     <object>objects\obj_WoodPile</object>
+    <object>objects\obj_Cat</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
