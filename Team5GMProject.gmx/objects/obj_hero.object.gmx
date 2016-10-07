@@ -3,7 +3,7 @@
   <spriteName>spr_hero_front</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>-5</depth>
+  <depth>-9</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -815,6 +815,11 @@ draw_set_alpha(.8);
 //draws the hero's inventory
 //to add anything, copy/paste the hasBow lines, changing the appropriate sprite and global variable
 loc=1;
+if(hasFruit==true) {
+    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
+    draw_sprite_ext(spr_GoldenFruit, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/500, view_wview/500, 0, -1, 1);
+    loc += 1.5;
+}
 if(hasBow==true) {
     draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
     draw_sprite_ext(spr_Sword, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/1500, view_wview/1500, 0, -1, 1);
