@@ -134,48 +134,6 @@ if (draw==true) {
     <event eventtype="9" enumb="32">
       <action>
         <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>finishCabbageMerchant</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>false</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -195,7 +153,28 @@ if (draw==true) {
     draw=true;
 }
 
-if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+if(finishCabbageMerchant==true &amp;&amp; conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    switch (choice) {
+        case 0:
+            text = "Thank you so much for your help";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
+            break;
+        case 99: //case for ending the conversation
+            draw=false;
+            conversation=false;
+            dialogueChoice=-1;
+            choice=0;
+            break;
+                
+        default: text = "something went wrong";
+            break;
+    }
+}
+else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     repeat (2)
     switch (choice) {
         case 0:
@@ -220,126 +199,50 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
                 choice3 = "";
                 choice4 = "";
             }
-            else if (dialogueChoice==1) {choice = 3;}
-            else if (dialogueChoice==2) {choice = 7;}
-            else if (dialogueChoice==3) {choice = 8;}
-            else if (dialogueChoice==4) {choice = 11;}
+            else if (dialogueChoice==1) {choice = 5;}
+            else if (dialogueChoice==2) {choice = 99;}
             dialogueChoice = -1;
             break;
         case 2:
-            if (dialogueChoice==-1) {
-                text = "Will you?  It's not often someone offers to help.";
-                choice1 = "";
-                choice2 = "";
-                choice3 = "";
-                choice4 = "";
-                choice = 3;
-            }
-           
+            text = "Will you?  It's not often someone offers to help.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 6;
             dialogueChoice = -1;
             break;
         case 3:
-            if (dialogueChoice==-1) {
-                finishCabbageMerchant = true;
-                text = "Here, take this.  You've beem a big help.";
-                choice = 4;
-           }
+            text = "Here, take this.  You've beem a big help.";
+            choice = 7;
             dialogueChoice = -1;
             break;
         case 4:
             text = "[Recieved 3 Moneies!]";
             money = money + 3;
-            finishCabbabageMerchant = true;
+            finishCabbageMerchant = true;
             choice = 99;
             dialogueChoice = -1;
             break;
         case 5:
-             if (dialogueChoice==-1) {
-             text = "MY CABBAGES!!!";
-            choice1 = "(knock down another one)";
-            choice2 = "Sorry, I'll pick them up for you.";
-            choice3 = "";
-            choice4 = "";
+            if (dialogueChoice==-1) {
+                text = "MY CABBAGES!!!";
+                choice1 = "(knock down another one)";
+                choice2 = "Sorry, I'll pick them up for you.";
+                choice3 = "(leave)";
+                choice4 = "";
             }
-             else if (dialogueChoice==1) {choice = 5;}
+            else if (dialogueChoice==1) {choice = 5;}
             else if (dialogueChoice==2) {choice = 2;}
             else if (dialogueChoice==3) {choice = 99;}
-            else if (dialogueChoice==4) {choice = 99;}
             dialogueChoice = -1;
             break;
         case 6:
-            if (hasBow) {
-                text = "I already gave you a bow!";
-            }
-            else {
-                text = "Of course, take this set to keep. Remember it takes lot of time#to get a good as me, don’t forget to spend a lot of time practicing.";
-                hasBow = true;
-            }
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 13;
+            choice = 3;
             dialogueChoice = -1;
             break;
         case 7:
-            text = "You wish, I have a draw strength like no other.";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 14;
-            dialogueChoice = -1;
-            break;
-        case 8:
-            text = "Great man the King is, not as great as me of course;#he does his best to rule the kingdom especially with what’s going on with-";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 9;
-            dialogueChoice = -1;
-            break;
-        case 9:
-            //just a thing used to hop to the last step without skipping anything
-            choice = 10;
-            dialogueChoice = -1;
-            break;
-        case 10:
-            text = "Forget I said that, in fact forget I said anything.";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 15;
-            dialogueChoice = -1;
-            break;
-        case 11:
-            text = "Best of luck with your training, may your strength one day come close to mine.";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 15;
-            dialogueChoice = -1;
-            break;
-        case 12:
-            //just a thing used to hop to the last step without skipping anything
-            choice = 3;
-            dialogueChoice = -1;
-            break;
-        case 13:
-            //just a thing used to hop to the last step without skipping anything
-            choice = 3;
-            dialogueChoice = -1;
-            break;
-        case 14:
-            //just a thing used to hop to the last step without skipping anything
-            choice = 1;
-            dialogueChoice = -1;
-            break;
-        case 15:
-            choice = 99;
+            choice = 4;
             dialogueChoice = -1;
             break;
         case 99: //case for ending the conversation
@@ -356,20 +259,6 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="9" enumb="27">
