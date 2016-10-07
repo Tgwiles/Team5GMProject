@@ -67,6 +67,7 @@
     <sprite>sprites\spr_MazeHole</sprite>
     <sprite>sprites\sprite47</sprite>
     <sprite>sprites\spr_FluffysTreat</sprite>
+    <sprite>sprites\spr_GoldenFruit</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
