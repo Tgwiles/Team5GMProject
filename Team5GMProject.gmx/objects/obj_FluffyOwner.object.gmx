@@ -173,7 +173,27 @@ if(gotFluffy &amp;&amp; conversation==true &amp;&amp; distance_to_object(obj_her
             break;
     }
 }
-
+else if(hasTreat &amp;&amp; conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    switch (choice) {
+        case 0:
+            text = "Please find my baby!";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
+            break;
+        case 99: //case for ending the conversation
+            draw=false;
+            conversation=false;
+            dialogueChoice=-1;
+            choice=0;
+            break;
+                
+        default: text = "something went wrong";
+            break;
+    }
+}
 else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     repeat (2)
     switch (choice) {
@@ -218,7 +238,7 @@ else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             choice3 = "";
             choice4 = "";
             hasTreat = true;
-            choice = 4;
+            choice = 99;
             dialogueChoice = -1;
             break;
         case 4:
