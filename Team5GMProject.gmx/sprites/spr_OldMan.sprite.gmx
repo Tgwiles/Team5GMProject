@@ -7,19 +7,19 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>166</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>152</bbox_bottom>
+  <bbox_left>15</bbox_left>
+  <bbox_right>314</bbox_right>
+  <bbox_top>15</bbox_top>
+  <bbox_bottom>299</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>170</width>
-  <height>170</height>
+  <width>330</width>
+  <height>315</height>
   <frames>
-    <frame index="0">images\spr_BlockingBranches_0.png</frame>
+    <frame index="0">images\spr_OldMan_0.png</frame>
   </frames>
 </sprite>

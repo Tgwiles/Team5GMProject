@@ -185,14 +185,19 @@ if (draw==true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(distance_to_object(obj_hero) &lt; 64) {
+            <string>/// Code for when you interact with Axe
+
+
+if(distance_to_object(obj_hero) &lt; 64) {
     conversation=true;
     draw=true;
 }
 
 if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    
     switch (choice) {
         case 0:
+            audio_play_sound(smd_PickUpItem, 5, false);
             text = "You pick up the dull axe.";
             choice = 1;
             choice1 = "";

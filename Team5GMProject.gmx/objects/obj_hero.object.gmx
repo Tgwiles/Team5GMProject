@@ -47,7 +47,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (speed &gt; 6) { 
+            <string>///Make sure there's a maximum speed
+
+
+if (speed &gt; 6) { 
 speed = 6;
 }
 </string>
@@ -70,11 +73,15 @@ speed = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (speed == 0) {
+            <string>/// Idle animation when not moving
+
+
+if (speed == 0) {
 sprite_index = spr_hero_idle;
 image_speed = 0.25
 
 }
+
 
 
 </string>
