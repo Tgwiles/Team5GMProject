@@ -387,6 +387,7 @@
     <instance objName="obj_TreeNear" x="1280" y="1280" name="inst_89D5316B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="1088" y="1280" name="inst_7666A4DB" locked="0" code="target_x = 500;&#xA;target_y = 100;&#xA;&#xA;target_r = rm_TransitionForest;&#xA;" scaleX="8" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="1024" y="0" name="inst_656EF0E9" locked="0" code="target_x = 500;&#xA;target_y = 650;&#xA;&#xA;target_r = rm_castle_2;&#xA;" scaleX="12" scaleY="2.06451606750488" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Help" x="52" y="809" name="inst_795862B7" locked="0" code="" scaleX="2.54166674613953" scaleY="2.52604174613953" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
