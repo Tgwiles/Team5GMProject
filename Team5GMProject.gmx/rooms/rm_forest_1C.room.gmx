@@ -61,7 +61,6 @@
     <instance objName="obj_TreeFar" x="480" y="192" name="inst_845F2FB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="608" y="192" name="inst_118108AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="736" y="192" name="inst_BCA7E715" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warpRoom" x="416" y="736" name="inst_CB922933" locked="0" code="target_x = 512;&#xA;target_y = 64;&#xA;&#xA;target_r = rm_forest_2C;&#xA;" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="0" y="320" name="inst_ABD5508D" locked="0" code="target_x = 928;&#xA;target_y = 416;&#xA;&#xA;target_r = rm_forest_1B;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeNear" x="736" y="768" name="inst_DA86D68B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeNear" x="608" y="768" name="inst_0C20BBB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
