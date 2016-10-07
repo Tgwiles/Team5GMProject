@@ -3,7 +3,7 @@
   <spriteName>spr_hero_front</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>-9</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -75,6 +75,8 @@ sprite_index = spr_hero_idle;
 image_speed = 0.25
 
 }
+
+
 </string>
           </argument>
         </arguments>
@@ -125,34 +127,6 @@ image_speed = 0.25
       </action>
       <action>
         <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>spr_hero_back</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -167,7 +141,13 @@ image_speed = 0.25
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed-=6;
+            <string>vspeed -= 6;
+image_speed = 0.3;
+
+if ((vspeed != 0) and (keyboard_check(ord('W')))) {
+sprite_index = spr_hero_back;
+}
+
 </string>
           </argument>
         </arguments>
@@ -303,34 +283,6 @@ else if (dialogueChoice==4) {
       </action>
       <action>
         <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>spr_hero_front</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -345,7 +297,13 @@ else if (dialogueChoice==4) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed+=6;
+            <string>vspeed += 6;
+image_speed = 0.3;
+
+if ((vspeed != 0) and (keyboard_check(ord('S')))) {
+sprite_index = spr_hero_front;
+}
+
 </string>
           </argument>
         </arguments>
@@ -481,34 +439,6 @@ else if (dialogueChoice==2) {
       </action>
       <action>
         <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>spr_hero_right</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -523,7 +453,13 @@ else if (dialogueChoice==2) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed+=6;
+            <string>hspeed += 6;
+image_speed = 0.3;
+
+if ((hspeed != 0) and (keyboard_check(ord('D')))) {
+sprite_index = spr_hero_right;
+}
+
 </string>
           </argument>
         </arguments>
@@ -659,34 +595,6 @@ else if (dialogueChoice==3) {
       </action>
       <action>
         <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>spr_hero_left</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -701,7 +609,14 @@ else if (dialogueChoice==3) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed-=6;
+            <string>hspeed -= 6;
+image_speed = 0.3;
+
+if ((hspeed != 0) and (keyboard_check(ord('A')))) {
+sprite_index = spr_hero_left;
+}
+
+
 </string>
           </argument>
         </arguments>
