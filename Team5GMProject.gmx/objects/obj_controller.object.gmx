@@ -46,6 +46,8 @@ globalvar hasTreat;
 hasTreat = false;
 globalvar gotFluffy;
 gotFluffy = false;
+globalvar gotBK;
+gotBK = false;
 globalvar hasFruit;
 hasFruit = false;
 

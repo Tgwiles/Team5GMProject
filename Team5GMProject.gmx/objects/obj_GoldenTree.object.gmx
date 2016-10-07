@@ -8,6 +8,60 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw=false;
+text="";
+choice1="";
+choice2="";
+choice3="";
+choice4="";
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_hero">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>spped</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,8 +79,79 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(hasFruit == false) {
-    
+            <string>draw_self();
+if (draw==true) {
+    draw_set_color(c_black);
+    //draw the character's statement/question
+    draw_rectangle(view_xview + 8, view_yview + 650,view_xview + 1016, view_yview + 750, false);
+
+    draw_set_color(c_white);
+    draw_set_valign(fa_center);
+    draw_set_halign(fa_center);
+
+    draw_set_font(fnt);
+    draw_text(view_xview + 512, view_yview + 700, text);
+    draw_set_color(c_black);
+}
+
+if(hasFruit==false) {
+    draw_sprite(spr_GoldenFruit, 0, x+125, y+145)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(distance_to_object(obj_hero) &lt; 64) {
+    conversation=true;
+    draw=true;
+}
+
+if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    switch (choice) {
+        case 0:
+            if(hasFruit==false) {
+                text = "You pick the Golden Fruit";
+                hasFruit = true;
+            }
+            else {
+                text = "The tree is empty";
+            }
+            choice = 1;
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            dialogueChoice = -1;
+            break;
+        case 1:
+            draw=false;
+            conversation=false;
+            choice = 0;
+            dialogueChoice = -1;
+            hasFruit = true;
+            break;
+                
+        default: text = "something went wrong";
+            break;
+    }
 }
 </string>
           </argument>

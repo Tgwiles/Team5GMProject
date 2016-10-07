@@ -68,6 +68,7 @@
     <sprite>sprites\sprite47</sprite>
     <sprite>sprites\spr_FluffysTreat</sprite>
     <sprite>sprites\spr_GoldenFruit</sprite>
+    <sprite>sprites\spr_Explosion2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -101,7 +102,7 @@
     <object>objects\obj_grasstuft2</object>
     <object>objects\obj_warpRoom</object>
     <object>objects\obj_controller</object>
-    <object>objects\obj_CenterWarer</object>
+    <object>objects\obj_CenterWater</object>
     <object>objects\obj_Wolf</object>
     <object>objects\obj_Rabbit</object>
     <object>objects\obj_Horse</object>
@@ -128,6 +129,7 @@
     <object>objects\obj_carpenter</object>
     <object>objects\obj_CabbageCart</object>
     <object>objects\obj_WoodPile</object>
+    <object>objects\obj_Explosion2</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
