@@ -655,7 +655,6 @@
     <instance objName="obj_CenterCastleWall" x="736" y="640" name="inst_857F7813" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CastleWallRightSide" x="1632" y="704" name="inst_A2398980" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CastleWallRightSide" x="1632" y="768" name="inst_983D49CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_CastleWallRightSide" x="320" y="640" name="inst_9103BDD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CastleWallRightSide" x="864" y="1280" name="inst_5988B55B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CastleWallRightSide" x="1952" y="800" name="inst_42F99202" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_CenterCastleWall" x="1856" y="320" name="inst_8847637A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -123,7 +123,7 @@ if (draw==true) {
 if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     switch (choice) {
         case 0:
-            text = "The animal does not seem interested in the treat.";
+            text = "The animal seems to ignore you.";
             choice = 1;
             choice1 = "";
             choice2 = "";

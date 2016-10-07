@@ -60,8 +60,6 @@ audio_play_sound(snd_Forest, 10, true);</code>
     <instance objName="obj_TreeNear" x="0" y="224" name="inst_D55FB452" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeNear" x="192" y="224" name="inst_8E6A9CA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeNear" x="96" y="192" name="inst_F3F6CF50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeNear" x="896" y="320" name="inst_521FAB9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeNear" x="736" y="704" name="inst_14EA90D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft1" x="448" y="320" name="inst_9D05D3D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft1" x="224" y="224" name="inst_45B43303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft1" x="320" y="640" name="inst_5D1582D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -82,18 +80,15 @@ audio_play_sound(snd_Forest, 10, true);</code>
     <instance objName="obj_grasstuft2" x="320" y="512" name="inst_A50E92EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="160" y="544" name="inst_D6647B66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="32" y="192" name="inst_A353455F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeFar" x="64" y="576" name="inst_B337DC45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="576" y="192" name="inst_831B7D9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeFar" x="32" y="736" name="inst_982B6691" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="64" y="672" name="inst_982B6691" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="224" y="192" name="inst_8E05B643" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="704" y="192" name="inst_A11561C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="800" y="256" name="inst_3E849494" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeFar" x="768" y="768" name="inst_D80987DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeFar" x="0" y="544" name="inst_6CB676D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeFar" x="864" y="448" name="inst_06BB869A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeNear" x="864" y="768" name="inst_FA09874D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TreeNear" x="192" y="768" name="inst_18F824D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeNear" x="0" y="768" name="inst_ABC1C958" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="-32" y="768" name="inst_ABC1C958" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft1" x="448" y="448" name="inst_524265F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft1" x="512" y="384" name="inst_0DB3DC20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft1" x="320" y="320" name="inst_59D47C5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -116,10 +111,14 @@ audio_play_sound(snd_Forest, 10, true);</code>
     <instance objName="obj_grasstuft2" x="576" y="320" name="inst_8278B00B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft2" x="512" y="480" name="inst_0311859E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grasstuft2" x="448" y="544" name="inst_7E10E316" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TreeFar" x="864" y="640" name="inst_7E4FBC70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="896" y="640" name="inst_7E4FBC70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="384" y="0" name="inst_03EE8656" locked="0" code="target_x = 1200;&#xA;target_y = 1100;&#xA;&#xA;target_r = rm_main_hub;&#xA;" scaleX="8.22580623626709" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="320" y="736" name="inst_3C7CEEFB" locked="0" code="target_x = 480;&#xA;target_y = 64;&#xA;&#xA;target_r = rm_forest_1B;&#xA;" scaleX="15" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_warpRoom" x="800" y="448" name="inst_2CF005AE" locked="0" code="target_x = 64;&#xA;target_y = 1920;&#xA;&#xA;target_r = rm_Maze;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Hole" x="704" y="352" name="inst_191D1D43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="736" y="768" name="inst_7152A7DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeNear" x="896" y="416" name="inst_9F9790CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TreeFar" x="896" y="320" name="inst_8AC9434D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
