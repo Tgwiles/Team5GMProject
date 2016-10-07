@@ -131,6 +131,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
                 text = "This rock looks like it could sharpen an axe or something.";
             }
             else if(hasAxe) {
+                audio_play_sound(snd_SharpeningAxe, 5, false);
                 text = "You sharpen the axe on the rock.";
                 sharpAxe = true;
             }

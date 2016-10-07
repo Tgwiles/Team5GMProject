@@ -47,7 +47,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (speed &gt; 6) { 
+            <string>///Make sure there's a maximum speed
+
+
+if (speed &gt; 6) { 
 speed = 6;
 }
 </string>
@@ -70,11 +73,15 @@ speed = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (speed == 0) {
+            <string>/// Idle animation when not moving
+
+
+if (speed == 0) {
 sprite_index = spr_hero_idle;
 image_speed = 0.25
 
 }
+
 
 
 </string>
@@ -735,9 +742,14 @@ if(hasFruit==true) {
     draw_sprite_ext(spr_GoldenFruit, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/500, view_wview/500, 0, -1, 1);
     loc += 1.5;
 }
-if(hasBow==true) {
+if(hasSword==true) {
     draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
     draw_sprite_ext(spr_Sword, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/1500, view_wview/1500, 0, -1, 1);
+    loc += 1.5;
+}
+if(hasBow==true) {
+    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
+    draw_sprite_ext(spr_Bow, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/1500, view_wview/1500, 0, -1, 1);
     loc += 1.5;
 }
 if(hasAxe==true) {
