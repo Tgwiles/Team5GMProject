@@ -180,7 +180,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             break;
         case 2:
             
-            if (hasShovel = true) {
+            if (hasShovel == true || finishTreasure==true) {
             text = "I'm sold out!";
             choice = 1;
             dialogueChoice = -1;
@@ -205,7 +205,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             break;}
             
         case 3:
-            if (hasHammer = true) {
+            if (hasHammer == true || finishMathGuy==true || finishCarpenter==true) {
             text = "I'm sold out!";
             choice = 1;
             dialogueChoice = -1;

@@ -82,9 +82,6 @@ image_speed = 0.3;
           <argument>
             <kind>1</kind>
             <string>draw_self();
-if (arrowShot==true) {
-    draw_sprite_ext(spr_arrow, 0, 600, 272, 2, 2, 0, -1, 1);
-}
 if (draw==true) {
     //making all the text boxes relative to view width, so its the same size in all rooms
     draw_set_color(c_black);
@@ -285,6 +282,8 @@ else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
         case 13:
             text = "[Received 4 Moneies!]";
             money += 4;
+            if(finishCarpenter==true) {hasHammer=false;}
+            finishMathGuy=true;
             choice = 99;
             dialogueChoice = -1;
             break;

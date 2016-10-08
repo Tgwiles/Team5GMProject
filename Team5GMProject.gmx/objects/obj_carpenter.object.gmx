@@ -152,8 +152,28 @@ if (draw==true) {
     conversation=true;
     draw=true;
 }
-
-if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+if(finishCarpenter==true &amp;&amp; conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    switch (choice) {
+        case 0:
+            text = "Thank you for all your help.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
+            break;
+        case 99: //case for ending the conversation
+            draw=false;
+            conversation=false;
+            dialogueChoice=-1;
+            choice=0;
+            break;
+                
+        default: text = "something went wrong";
+            break;
+    }
+}
+else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     repeat (2)
     switch (choice) {
         case 0:
@@ -171,26 +191,23 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             break;
         case 1:
             if (hasHammer = false) {
-            if (dialogueChoice==-1) {
                 text = "Sorry, buddy.  You don’t have any tools to help me with.";
                 choice1 = "";
                 choice2 = "";
                 choice3 = "";
                 choice4 = "";
                 choice = 99;
-                break;
-            }}
+            }
             else {
-            if (dialogueChoice==-1) {
                 text = "Is that a hammer you got there?  You could be a big help with that!";
-                choice1 = "";
-                choice2 = "";
-                choice3 = "";
-                choice4 = "";
                 choice = 3;
-                dialogueChoice = -1;
-                break;
-            }}
+            }
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            dialogueChoice = -1;
+            break;
             
         case 2:
             if (dialogueChoice==-1) {
@@ -205,23 +222,26 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             }
             
         case 3:
-            if (dialogueChoice==-1) {
-                text = " I’d say we did a good job!  Here, I’ll give you something as a way to say thanks.";
-                choice1 = "";
-                choice2 = "";
-                choice3 = "";
-                choice4 = "";
-                choice = 4;
-                break;
-            }
-           
+            text = " I’d say we did a good job!  Here, I’ll give you something as a way to say thanks.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 4;
+            dialogueChoice = -1;
+            break;
         case 4:
+            choice = 5;
+            dialogueChoice = -1;
+            break;
+        case 5:
             text = "[Received 11 Moneies!]";
             choice1 = "";
             choice2 = "";
             choice3 = "";
             choice4 = "";
             money = money + 11;
+            if(finishMathGuy==true) {hasHammer=false;}
             finishCarpenter = true;
             choice = 99;
             dialogueChoice = -1;
@@ -237,35 +257,6 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
         default: text = "something went wrong";
             break;
     }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (conversation==true and draw == true) 
-{
-choice=0;
-dialogueChoice=-1;
-conversation = false;
-draw = false;
 }
 </string>
           </argument>
