@@ -31,8 +31,6 @@ choice1="";
 choice2="";
 choice3="";
 choice4="";
-
-image_speed = 0.03;
 </string>
           </argument>
         </arguments>
