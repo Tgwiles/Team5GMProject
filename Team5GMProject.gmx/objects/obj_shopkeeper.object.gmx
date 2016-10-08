@@ -199,6 +199,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             }
             else {text = "Here you are, me lad!  Your very own shovel!";
             hasShovel = true;
+            money = money - 6;
             choice = 99;
             dialogueChoice = -1;
             break;}
@@ -223,6 +224,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             }
             else {text = "Here you are, me lad!  Your very own hammer!";
             hasHammer = true;
+             money = money - 9;
             choice = 99;
             dialogueChoice = -1;
             break;}
@@ -246,6 +248,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             else {text = "Here you go: The Magic Sword.  I hear the king is looking for one of these.";
             hasSword = true;
             choice = 99;
+             money = money - 20;
             dialogueChoice = -1;
             break;}
             dialogueChoice = -1;
