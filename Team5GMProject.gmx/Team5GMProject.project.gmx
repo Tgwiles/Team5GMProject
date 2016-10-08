@@ -79,7 +79,8 @@
     <sprite>sprites\spr_TitleText</sprite>
     <sprite>sprites\spr_BeginPhrase</sprite>
     <sprite>sprites\spr_money</sprite>
-    <sprite>sprites\spr_sign</sprite>
+    <sprite>sprites\sprite63</sprite>
+    <sprite>sprites\spr_Spotted_Egg</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -147,7 +148,8 @@
     <object>objects\obj_x</object>
     <object>objects\obj_TitleText</object>
     <object>objects\obj_BeginPhrase</object>
-    <object>objects\obj_sign</object>
+    <object>objects\obj_EndText</object>
+    <object>objects\obj_SpottedEgg</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
@@ -173,6 +175,7 @@
     <room>rooms\rm_castle_5</room>
     <room>rooms\rm_castle_6</room>
     <room>rooms\rm_TitleScreen</room>
+    <room>rooms\rm_EndScreen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
