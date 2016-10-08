@@ -88,29 +88,6 @@ image_speed = 0.25
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(hasEgg &amp;&amp; hasSword &amp;&amp; hasFruit) {
-    room_goto(rm_EndScreen);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="5" enumb="87">
       <action>
@@ -775,7 +752,7 @@ if(hasFruit==true) {
 }
 if(hasEgg==true) {
     draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
-    draw_sprite_ext(spr_Spotted_Egg, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/500, view_wview/500, 0, -1, 1);
+    draw_sprite_ext(spr_Spotted_Egg, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/1500, view_wview/1500, 0, -1, 1);
     loc += 1.5;
 }
 if(hasSword==true) {

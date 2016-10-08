@@ -82,6 +82,8 @@
     <sprite>sprites\sprite63</sprite>
     <sprite>sprites\spr_Spotted_Egg</sprite>
     <sprite>sprites\spr_ladder</sprite>
+    <sprite>sprites\spr_shovel</sprite>
+    <sprite>sprites\spr_hammer</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>

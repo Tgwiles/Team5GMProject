@@ -223,6 +223,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             choice = 0;
             dialogueChoice = -1;
             branchesCut = true;
+            hasAxe=false;
             instance_destroy();
             break;
                 
