@@ -81,6 +81,7 @@
     <sprite>sprites\spr_money</sprite>
     <sprite>sprites\sprite63</sprite>
     <sprite>sprites\spr_Spotted_Egg</sprite>
+    <sprite>sprites\spr_ladder</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -150,6 +151,7 @@
     <object>objects\obj_BeginPhrase</object>
     <object>objects\obj_EndText</object>
     <object>objects\obj_SpottedEgg</object>
+    <object>objects\obj_ladder</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>

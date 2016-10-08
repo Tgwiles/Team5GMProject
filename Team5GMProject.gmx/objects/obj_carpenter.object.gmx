@@ -32,7 +32,7 @@ choice2="S";
 choice3="D";
 choice4="W";
 
-image_speed = 0.03;
+image_speed = 0.003;
 </string>
           </argument>
         </arguments>
