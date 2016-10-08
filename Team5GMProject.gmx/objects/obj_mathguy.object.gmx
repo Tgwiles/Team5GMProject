@@ -25,7 +25,236 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.1;
+            <string>draw=false;
+text="";
+choice1="";
+choice2="";
+choice3="";
+choice4="";
+
+image_speed = 0.3;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_hero">
+      <action>
+        <libid>1</libid>
+        <id>115</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_bounce</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+if (arrowShot==true) {
+    draw_sprite_ext(spr_arrow, 0, 600, 272, 2, 2, 0, -1, 1);
+}
+if (draw==true) {
+    //making all the text boxes relative to view width, so its the same size in all rooms
+    draw_set_color(c_black);
+    //draw the character's statement/question
+    draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*360/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*260/1500, false);
+    
+    //draw the possible responses
+    if(choice1 != "") {
+        draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*150/1500, false);
+    }
+    if(choice2 != "") {
+        draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*150/1500, false);
+    }
+    if(choice3 != "") {
+        draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*40/1500, false);
+    }
+    if(choice4 != "") {
+        draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*40/1500, false);
+    }
+    
+    //highlight the selected response
+    draw_set_color(c_gray);
+    switch (dialogueChoice) {
+        case 1: draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*150/1500, false);
+                break;
+        case 2: draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*250/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*150/1500, false);
+                break;
+        case 3: draw_rectangle(view_xview + view_wview*8/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview/2 - view_wview*4/1500, view_yview + view_hview - view_wview*40/1500, false);
+                break;
+        case 4: draw_rectangle(view_xview + view_wview/2 + view_wview*4/1500, view_yview + view_hview - view_wview*140/1500, view_xview + view_wview - view_wview*8/1500, view_yview + view_hview - view_wview*40/1500, false);
+                break;
+    }
+    draw_set_color(c_white);
+    draw_set_valign(fa_center);
+    draw_set_halign(fa_center);
+
+    draw_set_font(fnt_small);
+    draw_text(view_xview + view_wview/2, view_yview + view_hview - view_wview*310/1500, text);
+    draw_text(view_xview + view_wview/4, view_yview + view_hview - view_wview*200/1500, choice1);
+    draw_text(view_xview + view_wview*3/4, view_yview + view_hview - view_wview*200/1500, choice2);
+    draw_text(view_xview + view_wview/4, view_yview + view_hview - view_wview*90/1500, choice3);
+    draw_text(view_xview + view_wview*3/4, view_yview + view_hview - view_wview*90/1500, choice4);
+    draw_set_color(c_black);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(conversation==false &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    conversation=true;
+    draw=true;
+}
+
+if(finishMathGuy==true &amp;&amp; conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    switch (choice) {
+        case 0:
+            text = "Thank you, but I have no more use for you.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
+            break;
+        case 99: //case for ending the conversation
+            draw=false;
+            conversation=false;
+            dialogueChoice=-1;
+            choice=0;
+            break;
+                
+        default: text = "something went wrong";
+            break;
+    }
+}
+else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    repeat (2)
+    switch (choice) {
+        case 0:
+            if (dialogueChoice==-1) {
+                text = "Hello, squire. I am Tragophyas, the philospher.";
+                choice1 = "What's up with the anvils?";
+                choice2 = "(walk away slowly)";
+                choice3 = "";
+                choice4 = "";
+            }
+            else if (dialogueChoice==1) {choice = 1;}
+            else if (dialogueChoice==1) {choice = 99;}
+            dialogueChoice = -1;
+            break;
+        case 1:
+            if (dialogueChoice==-1) {
+                text = "They are part of my plan#to eradicate all irrational numbers.";
+                choice1 = "I'm sorry, what?";
+                choice2 = "Cool! How can I help?";
+                choice3 = "";
+                choice4 = "";
+            }
+            else if (dialogueChoice==1) {choice = 2;}
+            dialogueChoice = -1;
+            break;
+        case 2:
+            text = "If these three anvils are struck simultaneously by three hammers of proportional weight, ";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 3;
+            dialogueChoice = -1;
+            break;
+        case 3:
+            choice = 4;
+            dialogueChoice = -1;
+            break;
+        case 4:
+            if (dialogueChoice==-1) {
+                text = "the harmony produced will be so pure that the sound waves#will cleanse the aether of irrational numbers as they pass through it.";
+                choice1 = "Uhhh, okay.  How can I help?";
+                choice2 = "(walk away slowly)";
+                choice3 = "";
+                choice4 = "";
+            }
+            else if (dialogueChoice==1) {choice = 5;}
+            else if (dialogueChoice==1) {choice = 99;}
+            dialogueChoice = -1;
+            break;
+        case 5:
+            if(hasHammer==false) {
+                text = "Bring me a hammer.  All will be made clear.";
+                choice = 99;
+            }
+            else {
+                text = "Hand me that hammer.";
+                choice = 6;
+            }
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            dialogueChoice = -1;
+            break;
+            
+        case 99: //case for ending the conversation
+            draw=false;
+            conversation=false;
+            dialogueChoice=-1;
+            choice=0;
+            break;
+                
+        default: text = "something went wrong";
+            break;
+    }
+}
 </string>
           </argument>
         </arguments>
