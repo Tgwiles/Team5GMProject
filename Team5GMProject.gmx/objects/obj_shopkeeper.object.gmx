@@ -158,32 +158,100 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
                 choice3 = "That sword behind you.";
                 choice4 = "Just browsing.";
             }
-            else if (dialogueChoice==1) {choice = 1;}
-            else if (dialogueChoice==2) {choice = 2;}
-            else if (dialogueChoice==3) {choice = 3;}
-            else if (dialogueChoice==4) {choice = 4;}
+            else if (dialogueChoice==1) {choice = 2;}
+            else if (dialogueChoice==2) {choice = 3;}
+            else if (dialogueChoice==3) {choice = 4;}
+            else if (dialogueChoice==4) {choice = 5;}
             dialogueChoice = -1;
             break;
         case 1:
-                text = "One shovel, coming right up!";
+                if (dialogueChoice==-1) {
+                text = "What would you like to buy?";
+                choice1 = "A shovel.";
+                choice2 = "A hammer.";
+                choice3 = "That sword behind you.";
+                choice4 = "Just browsing.";
+            }
+            else if (dialogueChoice==1) {choice = 2;}
+            else if (dialogueChoice==2) {choice = 3;}
+            else if (dialogueChoice==3) {choice = 4;}
+            else if (dialogueChoice==4) {choice = 5;}
+            dialogueChoice = -1;
+            break;
+        case 2:
+            
+            if (hasShovel = true) {
+            text = "I'm sold out!";
+            choice = 1;
+            dialogueChoice = -1;
+            break;
+            }
+            else if (money &lt; 6) {
+            text = "The shovel costs 6 Moneies.  You don't have enough.";
             choice1 = "";
             choice2 = "";
             choice3 = "";
             choice4 = "";
+            choice = 1;
+            
+            dialogueChoice = -1;
+            break;
+            }
+            else {text = "Here you are, me lad!  Your very own shovel!";
+            hasShovel = true;
             choice = 99;
             dialogueChoice = -1;
-            break;
-        case 2:
-            if (money &lt; 9) {choice = 5;}
-            else {choice = 7}
-            dialogueChoice = -1;
-            break;
+            break;}
+            
         case 3:
-             if (money &lt; 20) {choice = 5;}
-            else {choice = 8}
+            if (hasHammer = true) {
+            text = "I'm sold out!";
+            choice = 1;
             dialogueChoice = -1;
             break;
+            }
+            else if (money &lt; 9) {
+            text = "The hammer costs 9 Moneies.  You don't have enough.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 1;
+            
+            dialogueChoice = -1;
+            break;
+            }
+            else {text = "Here you are, me lad!  Your very own hammer!";
+            hasHammer = true;
+            choice = 99;
+            dialogueChoice = -1;
+            break;}
         case 4:
+            if (hasSword = true) { 
+            text = "I'm sold out!";
+            choice = 1;
+            dialogueChoice = -1;
+            break;
+            }
+            else if (money &lt; 20) { 
+            text = "The Magic Sword costs 20 Moneies.  You don't have enough.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 1;
+            dialogueChoice = -1;
+            break;
+            }
+            else {text = "Here you go: The Magic Sword.  I hear the king is looking for one of these.";
+            hasSword = true;
+            choice = 99;
+            dialogueChoice = -1;
+            break;}
+            dialogueChoice = -1;
+            break;
+        case 5:
+            
             text = "Well then scram.  You're taking up space for paying customers.";
             choice1 = "";
             choice2 = "";
@@ -192,29 +260,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             choice = 99;
             dialogueChoice = -1;
             break;
-        case 5:
-            
-            text = "You lack sufficient moneies.";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 0;
-            dialogueChoice = -1;
-            break;
-        case 6:
-            choice = 0;
-            dialogueChoice = -1;
-            break;
-        case 7:
-            text = "I’ll try but I always get so lost in these woods.#I fear I will never see him again.";
-            choice1 = "";
-            choice2 = "";
-            choice3 = "";
-            choice4 = "";
-            choice = 99;
-            dialogueChoice = -1;
-            break;        
+        
         case 99: //case for ending the conversation
             draw=false;
             conversation=false;
