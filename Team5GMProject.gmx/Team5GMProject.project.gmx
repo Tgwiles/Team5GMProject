@@ -75,6 +75,7 @@
     <sprite>sprites\spr_catladyhappy</sprite>
     <sprite>sprites\spr_x</sprite>
     <sprite>sprites\spr_Bow</sprite>
+    <sprite>sprites\spr_arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>

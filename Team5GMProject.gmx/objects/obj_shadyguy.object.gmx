@@ -25,13 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.025;
-draw=false;
+            <string>draw=false;
 text="";
-choice1="A";
-choice2="S";
-choice3="D";
-choice4="W";
+choice1="";
+choice2="";
+choice3="";
+choice4="";
 
 image_speed = 0.03;
 </string>
@@ -83,6 +82,9 @@ image_speed = 0.03;
           <argument>
             <kind>1</kind>
             <string>draw_self();
+if (arrowShot==true) {
+    draw_sprite_ext(spr_arrow, 0, 600, 272, 2, 2, 0, -1, 1);
+}
 if (draw==true) {
     //making all the text boxes relative to view width, so its the same size in all rooms
     draw_set_color(c_black);
@@ -154,10 +156,10 @@ if (draw==true) {
     draw=true;
 }
 
-if(finishCabbageMerchant==true &amp;&amp; conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+if(finishShadyGuy==true &amp;&amp; conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     switch (choice) {
         case 0:
-            text = "Thank you so much for your help";
+            text = "Go away! I don't want to lose any more Moneies to you!";
             choice1 = "";
             choice2 = "";
             choice3 = "";
@@ -180,70 +182,64 @@ else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     switch (choice) {
         case 0:
             if (dialogueChoice==-1) {
-                text = "Some kids were throwing rocks and knocked down my cabbages.";
-                choice1 = "That must stink.";
-                choice2 = "Want me to pick them up?";
-                choice3 = "(knock down a cabbage)";
-                choice4 = "(leave)";
-            }
-            else if (dialogueChoice==1) {choice = 1;}
-            else if (dialogueChoice==2) {choice = 2;}
-            else if (dialogueChoice==3) {choice = 5;}
-            else if (dialogueChoice==4) {choice = 99;}
-            dialogueChoice = -1;
-            break;
-        case 1:
-            if (dialogueChoice==-1) {
-                text = "I'll say!  At least they weren't blown away by a bear.";
-                choice1 = "(knock down a cabbage)";
-                choice2 = "(leave)";
+                text = "I bet you can't hit this target.";
+                choice1 = "Watch me.";
+                choice2 = "No, I can't.";
                 choice3 = "";
                 choice4 = "";
             }
-            else if (dialogueChoice==1) {choice = 5;}
-            else if (dialogueChoice==2) {choice = 99;}
+            else if (dialogueChoice==1) {choice = 1;}
+            else if (dialogueChoice==2) {choice = 2;}
             dialogueChoice = -1;
             break;
-        case 2:
-            text = "Will you?  It's not often someone offers to help.";
+        case 1:
+            if (hasBow==false) {
+                text = "What do you plan on hitting the target with?";
+                choice = 99;
+            }
+            else {
+                text = "That was the fastest shot I've ever seen!";
+                arrowShot = true;
+                hasBow = false;
+                choice = 3;
+            }
             choice1 = "";
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 6;
             dialogueChoice = -1;
             break;
+        case 2:
+            text = "That's what I thought.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            dialogueChoice = -1;
+            choice = 99;
+            break;
         case 3:
-            text = "Here, take this.  You've beem a big help.";
-            choice = 7;
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 4;
             dialogueChoice = -1;
             break;
         case 4:
-            text = "[Recieved 3 Moneies!]";
-            money = money + 3;
-            finishCabbageMerchant = true;
-            choice = 99;
+            text = "Take these Moneies as your prize.";
+            choice = 5;
             dialogueChoice = -1;
             break;
         case 5:
-            if (dialogueChoice==-1) {
-                text = "MY CABBAGES!!!";
-                choice1 = "(knock down another one)";
-                choice2 = "Sorry, I'll pick them up for you.";
-                choice3 = "(leave)";
-                choice4 = "";
-            }
-            else if (dialogueChoice==1) {choice = 5;}
-            else if (dialogueChoice==2) {choice = 2;}
-            else if (dialogueChoice==3) {choice = 99;}
+            choice = 6;
             dialogueChoice = -1;
             break;
         case 6:
-            choice = 3;
-            dialogueChoice = -1;
-            break;
-        case 7:
-            choice = 4;
+            text = "[Received 4 Moneies!]";
+            money += 4;
+            finishShadyGuy = true;
+            choice = 99;
             dialogueChoice = -1;
             break;
         case 99: //case for ending the conversation
@@ -256,35 +252,6 @@ else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
         default: text = "something went wrong";
             break;
     }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (conversation==true and draw == true) 
-{
-choice=0;
-dialogueChoice=-1;
-conversation = false;
-draw = false;
 }
 </string>
           </argument>
