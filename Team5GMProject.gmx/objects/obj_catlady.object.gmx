@@ -53,13 +53,13 @@
       </action>
       <action>
         <libid>1</libid>
-        <id>501</id>
+        <id>541</id>
         <kind>0</kind>
-        <userelative>-1</userelative>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_draw_sprite</functionname>
+        <functionname>action_sprite_set</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>-100</sprite>
+            <sprite>spr_catladyhappy</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -75,11 +75,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-1</string>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -318,7 +314,8 @@ else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             choice2 = "";
             choice3 = "";
             choice4 = "";
-                choice=5;
+            sprite_index = spr_catladyhappy;
+            choice=5;
             dialogueChoice = -1;
             break;
         case 5:
@@ -330,7 +327,8 @@ else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             text = "Received 3 Money!";
             money = money + 3;
             choice = 99;
-                finishCatLady = true;
+            hasCat = false;
+            finishCatLady = true;
             dialogueChoice = -1;
             break;
         

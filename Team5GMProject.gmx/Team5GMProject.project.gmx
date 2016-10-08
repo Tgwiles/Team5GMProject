@@ -84,6 +84,7 @@
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\spr_shovel</sprite>
     <sprite>sprites\spr_hammer</sprite>
+    <sprite>sprites\spr_king</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>
@@ -96,6 +97,7 @@
     <font>fonts\fnt</font>
     <font>fonts\fnt_small</font>
     <font>fonts\fnt_BK</font>
+    <font>fonts\fnt_BKsmall</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_hero</object>
@@ -154,13 +156,15 @@
     <object>objects\obj_EndText</object>
     <object>objects\obj_SpottedEgg</object>
     <object>objects\obj_ladder</object>
+    <object>objects\obj_king</object>
+    <object>objects\obj_end</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\rm_main_hub</room>
     <room>rooms\rm_TitleScreen</room>
+    <room>rooms\rm_main_hub</room>
     <room>rooms\rm_TransitionForest</room>
     <room>rooms\rm_mountain1</room>
     <room>rooms\rm_forest_3B</room>

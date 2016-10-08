@@ -741,8 +741,14 @@ if(money &gt; 0) {
     draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
     draw_sprite_ext(spr_money, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/500, view_wview/500, 0, -1, 1);
     draw_set_color(c_white);
+    draw_set_font(fnt);
     draw_text(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, money);
     draw_set_color(c_black);
+    loc += 1.5;
+}
+if(hasCat==true) {
+    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
+    draw_sprite_ext(spr_cat, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/1500, view_wview/1500, 0, -1, 1);
     loc += 1.5;
 }
 if(hasShovel==true) {

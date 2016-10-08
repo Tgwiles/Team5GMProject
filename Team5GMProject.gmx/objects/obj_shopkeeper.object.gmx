@@ -182,6 +182,10 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             
             if (hasShovel == true || finishTreasure==true) {
             text = "I'm sold out!";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
             choice = 1;
             dialogueChoice = -1;
             break;
@@ -198,6 +202,10 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             break;
             }
             else {text = "Here you are, me lad!  Your very own shovel!";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
             hasShovel = true;
             money = money - 6;
             choice = 99;
@@ -207,6 +215,10 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
         case 3:
             if (hasHammer == true || finishMathGuy==true || finishCarpenter==true) {
             text = "I'm sold out!";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
             choice = 1;
             dialogueChoice = -1;
             break;
@@ -223,6 +235,10 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             break;
             }
             else {text = "Here you are, me lad!  Your very own hammer!";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
             hasHammer = true;
              money = money - 9;
             choice = 99;
@@ -245,10 +261,15 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             dialogueChoice = -1;
             break;
             }
-            else {text = "Here you go: The Magic Sword.  I hear the king is looking for one of these.";
+            else {
+            text = "Here you go: The Magic Sword.  I hear the king is looking for one of these.";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
             hasSword = true;
             choice = 99;
-             money = money - 20;
+            money = money - 20;
             dialogueChoice = -1;
             break;}
             dialogueChoice = -1;
