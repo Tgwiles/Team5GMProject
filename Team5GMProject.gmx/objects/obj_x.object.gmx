@@ -25,14 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw=false;
-text="";
-choice1="A";
-choice2="S";
-choice3="D";
-choice4="W";
+            <string>if(finishTreasure == true) {
+    instance_destroy();
+}
 
-image_speed = 0.03;
+draw=false;
+text="";
+choice1="";
+choice2="";
+choice3="";
+choice4="";
 </string>
           </argument>
         </arguments>
@@ -108,48 +110,6 @@ if (draw==true) {
     <event eventtype="9" enumb="32">
       <action>
         <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>hasShovel</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>true</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -164,94 +124,40 @@ if (draw==true) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(conversation==false &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+            <string>/// Code for when you interact with X-spot
+
+
+if(hasShovel==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     conversation=true;
     draw=true;
 }
 
 if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
-    repeat (2)
+    
     switch (choice) {
         case 0:
-            if (dialogueChoice==-1) {
-                text = "Using your shovel, you dug up 7 moneies!";
-                choice1 = "";
-                choice2 = "";
-                choice3 = "";
-                choice4 = "";
-                money = money + 7;
-                choice = 99;
-            }
-           
+            audio_play_sound(smd_PickUpItem, 5, false);
+            text = "You dug up 7 Moneies!";
+            money += 7;
+            choice = 1;
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            dialogueChoice = -1;
             break;
-        
-        case 99: //case for ending the conversation
+        case 1:
+            finishTreasure = true;
             draw=false;
             conversation=false;
-            dialogueChoice=-1;
-            choice=0;
+            choice = 0;
+            dialogueChoice = -1;
+            instance_destroy();
             break;
                 
         default: text = "something went wrong";
             break;
     }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="9" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (conversation==true and draw == true) 
-{
-choice=0;
-dialogueChoice=-1;
-conversation = false;
-draw = false;
 }
 </string>
           </argument>

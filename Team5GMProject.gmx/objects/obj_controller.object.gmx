@@ -80,6 +80,8 @@ globalvar talkCabbageMerchant;
 talkCabbageMerchant = false;
 globalvar finishCabbageMerchant;
 finishCabbageMerchant = false;
+globalvar arrowShot;
+arrowShot = false;
 globalvar finishShadyGuy;
 finishShadyGuy = false;
 globalvar talkGardener;
