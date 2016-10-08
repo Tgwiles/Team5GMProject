@@ -104,6 +104,8 @@ globalvar conversation;
 conversation=false;
 globalvar choice;
 choice=0;
+
+room_goto(rm_TitleScreen);
 </string>
           </argument>
         </arguments>

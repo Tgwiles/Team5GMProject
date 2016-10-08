@@ -155,8 +155,8 @@
     <timeline>timelines\timeline0</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\rm_TitleScreen</room>
     <room>rooms\rm_main_hub</room>
+    <room>rooms\rm_TitleScreen</room>
     <room>rooms\rm_TransitionForest</room>
     <room>rooms\rm_mountain1</room>
     <room>rooms\rm_forest_3B</room>
