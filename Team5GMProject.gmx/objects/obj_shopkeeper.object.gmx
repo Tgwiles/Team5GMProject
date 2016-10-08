@@ -165,18 +165,22 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             dialogueChoice = -1;
             break;
         case 1:
-            if (money &lt; 6) {choice = 5}
-            else {choice = 6}
+                text = "One shovel, coming right up!";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
             dialogueChoice = -1;
             break;
         case 2:
-            if (money &lt; 9) {choice = 7}
-            else {choice = 8}
+            if (money &lt; 9) {choice = 5;}
+            else {choice = 7}
             dialogueChoice = -1;
             break;
         case 3:
-             if (money &lt; 20) {choice = 9}
-            else {choice = 10}
+             if (money &lt; 20) {choice = 5;}
+            else {choice = 8}
             dialogueChoice = -1;
             break;
         case 4:
@@ -189,17 +193,17 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             dialogueChoice = -1;
             break;
         case 5:
-            if (dialogueChoice==-1)
-            text = "He is the most adorable thing you have ever seen, a real sweetheart.#If you get too close he may lick you!";
+            
+            text = "You lack sufficient moneies.";
             choice1 = "";
             choice2 = "";
             choice3 = "";
             choice4 = "";
-            choice = 6;
+            choice = 0;
             dialogueChoice = -1;
             break;
         case 6:
-            choice = 2;
+            choice = 0;
             dialogueChoice = -1;
             break;
         case 7:

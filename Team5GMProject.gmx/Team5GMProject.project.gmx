@@ -43,6 +43,7 @@
     <sprite>sprites\spr_Wolf</sprite>
     <sprite>sprites\spr_Fluffy</sprite>
     <sprite>sprites\spr_CenterDarkDirt</sprite>
+    <sprite>sprites\spr_treasurepile</sprite>
     <sprite>sprites\spr_Axe</sprite>
     <sprite>sprites\spr_Rock</sprite>
     <sprite>sprites\spr_BlockingBranches</sprite>
@@ -72,6 +73,7 @@
     <sprite>sprites\spr_Hole</sprite>
     <sprite>sprites\spr_cat</sprite>
     <sprite>sprites\spr_catladyhappy</sprite>
+    <sprite>sprites\spr_x</sprite>
     <sprite>sprites\spr_Bow</sprite>
   </sprites>
   <backgrounds name="background">
@@ -136,6 +138,7 @@
     <object>objects\obj_Explosion2</object>
     <object>objects\obj_Hole</object>
     <object>objects\obj_Cat</object>
+    <object>objects\obj_x</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
