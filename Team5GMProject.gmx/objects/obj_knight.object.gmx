@@ -231,7 +231,7 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             dialogueChoice = -1;
             break;
         case 6:
-            if (hasBow) {
+            if (hasBow || finishShadyGuy) {
                 text = "I already gave you a bow!";
             }
             else {
