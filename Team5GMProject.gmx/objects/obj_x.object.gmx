@@ -137,8 +137,8 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     switch (choice) {
         case 0:
             audio_play_sound(smd_PickUpItem, 5, false);
-            text = "You dug up 7 Moneies!";
-            money += 7;
+            text = "You dug up 10 Moneies!";
+            money += 10;
             choice = 1;
             choice1 = "";
             choice2 = "";
