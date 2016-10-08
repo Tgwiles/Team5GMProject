@@ -128,7 +128,7 @@
     <object>objects\obj_Help</object>
     <object>objects\obj_Start</object>
     <object>objects\obj_GoldenTree</object>
-    <object>objects\obj_Sword</object>
+    <object>objects\obj_Egg</object>
     <object>objects\obj_CaveMonster</object>
     <object>objects\obj_FluffyOwner</object>
     <object>objects\obj_shop</object>
@@ -155,6 +155,7 @@
     <timeline>timelines\timeline0</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\rm_TitleScreen</room>
     <room>rooms\rm_main_hub</room>
     <room>rooms\rm_TransitionForest</room>
     <room>rooms\rm_mountain1</room>
@@ -174,7 +175,6 @@
     <room>rooms\rm_castle_4</room>
     <room>rooms\rm_castle_5</room>
     <room>rooms\rm_castle_6</room>
-    <room>rooms\rm_TitleScreen</room>
     <room>rooms\rm_EndScreen</room>
   </rooms>
   <help>

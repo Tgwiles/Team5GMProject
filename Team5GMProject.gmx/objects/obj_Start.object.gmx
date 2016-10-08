@@ -8,24 +8,24 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="7" enumb="2">
+    <event eventtype="9" enumb="32">
       <action>
         <libid>1</libid>
-        <id>321</id>
+        <id>224</id>
         <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_message</functionname>
+        <functionname>action_another_room</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>2</kind>
-            <string>The King has chosen you among all the squires to complete a quest for him. He needs you  to venture through the forest to find the legendary golden fruit, navigate the catacombs to retrieve the Cave Monster's egg, and negotiate with the people in the castle to aquire the magic sword.</string>
+            <kind>11</kind>
+            <room>rm_main_hub</room>
           </argument>
         </arguments>
       </action>

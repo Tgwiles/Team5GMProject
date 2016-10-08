@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>spr_catladyhappy</sprite>
+            <sprite>-100</sprite>
           </argument>
           <argument>
             <kind>0</kind>
@@ -222,48 +222,6 @@ if (draw==true) {
     <event eventtype="9" enumb="32">
       <action>
         <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>finishCatLady</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>false</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -282,8 +240,28 @@ if (draw==true) {
     conversation=true;
     draw=true;
 }
-
-if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+if(finishCatLady==true &amp;&amp; conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
+    switch (choice) {
+        case 0:
+            text = "Thank youfor my kitty";
+            choice1 = "";
+            choice2 = "";
+            choice3 = "";
+            choice4 = "";
+            choice = 99;
+            break;
+        case 99: //case for ending the conversation
+            draw=false;
+            conversation=false;
+            dialogueChoice=-1;
+            choice=0;
+            break;
+                
+        default: text = "something went wrong";
+            break;
+    }
+}
+else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
     repeat (2)
     switch (choice) {
         case 0:
@@ -335,7 +313,6 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             dialogueChoice = -1;
             break;
         case 4:
-                finishCatLady = true;
               text = "You found her!  Oh thank you!";
             choice1 = "";
             choice2 = "";
@@ -350,9 +327,10 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             dialogueChoice = -1;
             break;
         case 6:
-            text = "Recieved 1 Money!";
-            money = money + 1;
+            text = "Received 3 Money!";
+            money = money + 3;
             choice = 99;
+                finishCatLady = true;
             dialogueChoice = -1;
             break;
         
@@ -370,20 +348,6 @@ if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="9" enumb="27">
