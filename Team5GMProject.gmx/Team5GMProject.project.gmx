@@ -18,6 +18,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_hero_front</sprite>
     <sprite>sprites\spr_hero_idle</sprite>
+    <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_hero_back</sprite>
     <sprite>sprites\spr_hero_left</sprite>
     <sprite>sprites\spr_hero_right</sprite>
@@ -77,6 +78,7 @@
     <sprite>sprites\spr_Bow</sprite>
     <sprite>sprites\spr_TitleText</sprite>
     <sprite>sprites\spr_BeginPhrase</sprite>
+    <sprite>sprites\spr_money</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_grass</background>

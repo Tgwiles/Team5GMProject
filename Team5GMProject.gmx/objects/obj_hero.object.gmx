@@ -737,6 +737,14 @@ draw_set_alpha(.8);
 //draws the hero's inventory
 //to add anything, copy/paste the hasBow lines, changing the appropriate sprite and global variable
 loc=1;
+if(money &gt; 0) {
+    draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
+    draw_sprite_ext(spr_money, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/500, view_wview/500, 0, -1, 1);
+    draw_set_color(c_white);
+    draw_text(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, money);
+    draw_set_color(c_black);
+    loc += 1.5;
+}
 if(hasFruit==true) {
     draw_circle(view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview*13/300, false);
     draw_sprite_ext(spr_GoldenFruit, image_index, view_xview + view_wview*15/16, view_yview + view_wview*loc/16, view_wview/500, view_wview/500, 0, -1, 1);

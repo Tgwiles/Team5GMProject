@@ -99,7 +99,7 @@ talkMathGuy = false;
 globalvar finishMathGuy;
 finishMathGuy = false;
 
-
+//conversation stuff
 globalvar conversation;
 conversation=false;
 globalvar choice;

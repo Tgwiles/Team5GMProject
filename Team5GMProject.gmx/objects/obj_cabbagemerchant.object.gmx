@@ -219,7 +219,7 @@ else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             break;
         case 4:
             text = "[Recieved 3 Moneies!]";
-            money = money + 3;
+            money += 3;
             finishCabbageMerchant = true;
             choice = 99;
             dialogueChoice = -1;
