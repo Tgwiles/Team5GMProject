@@ -67,7 +67,7 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_sign</object>
+            <object>-100</object>
           </argument>
           <argument>
             <kind>0</kind>
