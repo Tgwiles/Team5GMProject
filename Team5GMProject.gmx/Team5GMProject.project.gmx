@@ -158,6 +158,7 @@
     <object>objects\obj_ladder</object>
     <object>objects\obj_king</object>
     <object>objects\obj_end</object>
+    <object>objects\obj_carpenterSign</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>

@@ -243,6 +243,7 @@ else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             money = money + 11;
             if(finishMathGuy==true) {hasHammer=false;}
             finishCarpenter = true;
+            instance_create(640, 192, obj_carpenterSign);
             choice = 99;
             dialogueChoice = -1;
             break;
