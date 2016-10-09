@@ -12,8 +12,9 @@
   <showcolour>-1</showcolour>
   <code>audio_stop_sound(snd_TrainingGround);
 audio_stop_sound(snd_WaterDripping);
-
-audio_play_sound(snd_Forest, 10, true);</code>
+if(!audio_is_playing(snd_Forest)){
+    audio_play_sound(snd_Forest, 10, true);
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
