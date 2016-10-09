@@ -228,7 +228,7 @@ else if(conversation==true &amp;&amp; distance_to_object(obj_hero) &lt; 64) {
             if (dialogueChoice==-1) {
                 text = "MY CABBAGES!!!";
                 choice1 = "(knock down another one)";
-                choice2 = "Sorry, I'll pick them up for you.";
+                choice2 = "Sorry, I'll pick them up.";
                 choice3 = "(leave)";
                 choice4 = "";
             }
